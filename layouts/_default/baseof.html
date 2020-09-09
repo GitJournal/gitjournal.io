@@ -20,10 +20,10 @@
 </head>
 
 <body class='{{ cond .Site.IsServer "debug-screens" "" }}'>
-  <div id="app" class="flex flex-col min-h-screen font-mono items-center">
+  <div id="app" class="flex flex-col min-h-screen font-mono">
     {{ partial "header" . }}
 
-    <div class="flex-grow">
+    <div class="flex-grow self-center">
 
       {{ block "main" . }}
 
