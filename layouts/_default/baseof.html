@@ -11,6 +11,12 @@
   {{ $styles := resources.Get "styles/main.scss" | toCSS $cssOpts | postCSS $postcssOpts }}
   {{ $stylesAll := slice $styles | resources.Concat "styles/main.css" | minify }}
   <link rel="stylesheet" href="{{ $stylesAll.Permalink }}" media="screen" crossorigin="anonymous">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "images/favicon/apple-touch-icon.png" | relURL }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "images/favicon/favicon-32x32.png" | relURL }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "images/favicon/favicon-16x16.png" | relURL }}">
+  <link rel="manifest" href="{{ "images/favicon/site.webmanifest" | relURL }}">
 </head>
 
 <body>
