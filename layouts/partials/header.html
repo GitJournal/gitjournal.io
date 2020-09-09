@@ -1,13 +1,13 @@
 {{- $navbar := .Site.Params.navbar }}
 
-<header class="bg-white">
+<header class="sm:flex sm:justify-between sm:items-center">
   <div class="flex items-center justify-between px-4 py-2" :class="isOpen ? 'shadow-sm' : 'shadow-none'">
     <div>
       <a href="/">
         <img class="h-8" src="/images/logos/icon-logo.svg" alt="GitJournal" />
       </a>
     </div>
-    <div>
+    <div class="sm:hidden">
       <button @click="isOpen = !isOpen" type="button" class="text-gray-800 hover:text-green-400 focus:text-green-900 focus:outline-none">
         <svg v-if="!isOpen" class="h-8 w-8 fill-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -18,9 +18,10 @@
       </button>
     </div>
   </div>
-  <div :class="isOpen ? 'block' : 'hidden'" class="px-1 py-3 pb-3 shadow-lg font-normal">
+  <div :class="isOpen ? 'block' : 'hidden'" class="px-1 py-3 pb-3 shadow-lg font-normal sm:flex sm:shadow-none">
     {{- range $navbar }}
-    <a class="block mt-1 text-center py-2 hover:bg-green-200 rounded text-xl" href="{{ .Permalink }}">{{ .title }}</a>
+    <a class="block mt-1 text-center py-2 text-gray-900 hover:bg-green-400 rounded text-l sm:mx-3 sm:hover:bg-transparent sm:hover:text-green-500"
+      href="{{ .Permalink }}">{{ .title }}</a>
     {{- end }}
   </div>
 </header>
