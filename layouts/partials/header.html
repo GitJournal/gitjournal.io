@@ -1,6 +1,6 @@
 {{- $navbar := .Site.Params.navbar }}
 
-<header class="sm:flex sm:justify-items-center sm:items-center sm:max-w-3xl sm:self-center">
+<header class="sm:flex sm:justify-between sm:items-center">
   <div class="flex items-center justify-between px-4 py-2" :class="isOpen ? 'shadow-sm' : 'shadow-none'">
     <div>
       <a href="/">
@@ -8,7 +8,8 @@
       </a>
     </div>
     <div class="sm:hidden">
-      <button @click="isOpen = !isOpen" type="button" class="text-gray-800 hover:text-green-400 focus:text-green-900 focus:outline-none">
+      <button @click="isOpen = !isOpen" type="button"
+        class="text-gray-800 hover:text-green-400 focus:text-green-900 focus:outline-none">
         <svg v-if="!isOpen" class="h-8 w-8 fill-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
