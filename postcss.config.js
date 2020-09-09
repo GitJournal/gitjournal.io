@@ -1,6 +1,6 @@
 module.exports = {
   plugins: [
-    require("tailwindcss")("assets/config/tailwind.config.js"),
+    require("tailwindcss")("tailwind.config.js"),
 
     process.env.HUGO_ENV === "production"
       ? require("@fullhuman/postcss-purgecss")({

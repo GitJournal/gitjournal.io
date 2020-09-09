@@ -2,5 +2,13 @@
   "name": "gitjournal.io",
   "scripts": {
     "build": "env HUGO_ENV='production' hugo"
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.32",
+    "postcss-cli": "^7.1.2",
+    "postcss-import": "^12.0.1",
+    "tailwindcss": "^1.8.5"
   }
 }

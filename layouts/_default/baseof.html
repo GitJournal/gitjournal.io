@@ -1,17 +1,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitJournal BaseOf</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitJournal BaseOf</title>
+
+  {{/*  // Assets information  */}}
+  {{ $cssOpts := (dict "targetPath" "styles/main.css" "enableSourceMap" true ) }}
+  {{ $postcssOpts := (dict "config" "postcss.config.js" ) }}
+  {{ $styles := resources.Get "styles/main.scss" | toCSS $cssOpts | postCSS $postcssOpts }}
+  {{ $stylesAll := slice $styles | resources.Concat "styles/main.css" | minify }}
+  <link rel="stylesheet" href="{{ $stylesAll.Permalink }}" media="screen" crossorigin="anonymous">
 </head>
 
 <body>
 
-    {{ block "main" . }}
 
-    {{ end }}
+  <div id="app" class="flex flex-col min-h-screen">
+    {{ partial "header" . }}
 
+    <div class="flex-grow">
+
+      {{ block "main" . }}
+
+      {{ end }}
+    </div>
+
+    {{ partial "footer" . }}
+  </div>
+
+
+
+  {{/*  Js information */}}
+  {{ $vueDev := resources.Get "js/vue.js" }}
+  {{ $vueProd := resources.Get "js/vue.min.js" }}
+  {{ $js := resources.Get "js/main.js" }}
+  {{ $jsDevAll := slice $vueDev $js | resources.Concat "js/main-dev.js" | minify }}
+  {{ $jsProdAll := slice $vueProd $js | resources.Concat "js/main.js" | minify }}
+  {{ if .Site.IsServer }}
+  <script src="{{ $jsDevAll.Permalink }}"></script>
+  {{ else }}
+  <script src="{{ $jsProdAll.Permalink }}"></script>
+  {{ end }}
 </body>
 
 </html>
