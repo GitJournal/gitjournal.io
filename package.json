@@ -1,0 +1,6 @@
+{
+  "name": "gitjournal.io",
+  "scripts": {
+    "build": "env HUGO_ENV='production' hugo"
+  }
+}
