@@ -1,3 +1,16 @@
 baseURL: https://gitjournal.io
 languageCode: en-us
 title: GitJournal
+
+params:
+  navbar:
+    - title: Privacy
+      Permalink: /privacy
+    - title: Support
+      Permalink: /support
+    - title: Contribute
+      Permalink: /contribute
+    - title: Blog
+      Permalink: /blog
+    - title: About
+      Permalink: /about

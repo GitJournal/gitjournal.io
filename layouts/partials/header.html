@@ -1,7 +1,9 @@
+{{- $navbar := .Site.Params.navbar }}
+
 <header class="bg-white">
   <div class="flex items-center justify-between px-4 py-4" :class="isOpen ? 'shadow-sm' : 'shadow-none'">
     <div>
-      <img class="h-12" src="/images/logo.svg" alt="GitJournal" />
+      <img class="h-12" src="/images/logos/logo.svg" alt="GitJournal" />
     </div>
     <div>
       <button @click="isOpen = !isOpen" type="button" class="text-gray-900 hover:text-gray-600 focus:text-gray-600 focus:outline-none">
@@ -14,9 +16,8 @@
     </div>
   </div>
   <div :class="isOpen ? 'block' : 'hidden'" class="px-1 py-3 pb-3 shadow-lg font-normal">
-    <a class="block text-center py-2 hover:bg-gray-200 rounded text-xl" href="#foo">Privacy</a>
-    <a class="block mt-1 text-center py-2 hover:bg-gray-200 rounded text-xl" href="#foo">Support</a>
-    <a class="block mt-1 text-center py-2 hover:bg-gray-200 rounded text-xl" href="#foo">Contribute</a>
-    <a class="block mt-1 text-center py-2 hover:bg-gray-200 rounded text-xl" href="#foo">About</a>
+    {{- range $navbar }}
+    <a class="block mt-1 text-center py-2 hover:bg-gray-200 rounded text-xl" href="{{ .Permalink }}">{{ .title }}</a>
+    {{- end }}
   </div>
 </header>
