@@ -19,9 +19,7 @@
   <link rel="manifest" href="{{ "images/favicon/site.webmanifest" | relURL }}">
 </head>
 
-<body>
-
-
+<body class='{{ cond .Site.IsServer "debug-screens" "" }}'>
   <div id="app" class="flex flex-col min-h-screen font-mono items-center">
     {{ partial "header" . }}
 
