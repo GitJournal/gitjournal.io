@@ -1,5 +1,12 @@
 {{ define "main" }}
 
-This is the single template
+<article class="prose xl:prose-xl my-16 content-center">
+  <h1 class="text-4xl mt-1 m-0">{{ .Page.Title }}</h1>
+  <h2 class="text-sm">{{ .Params.subtitle }}</h2>
+
+  <div class="mt-12">
+    {{ .Page.Content }}
+  </div>
+</article>
 
 {{ end }}

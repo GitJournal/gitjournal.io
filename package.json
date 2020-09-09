@@ -5,6 +5,7 @@
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@tailwindcss/typography": "^0.2.0",
     "autoprefixer": "^9.8.6",
     "postcss": "^7.0.32",
     "postcss-cli": "^7.1.2",
