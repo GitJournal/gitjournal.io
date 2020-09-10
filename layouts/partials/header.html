@@ -1,4 +1,4 @@
-{{- $navbar := .Site.Params.navbar }}
+{{ $navbar := .Site.Params.navbar }}
 
 <header class="container mx-auto sm:flex sm:justify-between sm:max-w-3xl xl:max-w-5xl">
   <div class="flex items-center justify-between px-4 py-2" :class="isOpen ? 'shadow-sm' : 'shadow-none'">
@@ -20,9 +20,9 @@
     </div>
   </div>
   <div :class="isOpen ? 'block' : 'hidden'" class="px-1 py-3 pb-3 shadow-lg font-normal rounded sm:flex sm:shadow-none">
-    {{- range $navbar }}
+    {{ range $navbar }}
     <a class="block mt-1 text-center py-2 text-gray-900 hover:bg-green-400 rounded text-l sm:mx-3 sm:hover:bg-transparent sm:hover:text-green-500 xl:text-xl"
       href="{{ .Permalink }}">{{ .title }}</a>
-    {{- end }}
+    {{ end }}
   </div>
 </header>
