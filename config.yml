@@ -20,8 +20,6 @@ params:
   footer:
     - title: GitJournal
       links:
-        - title: License Information
-          Permalink: /license
         - title: About Us
           Permalink: /about
         - title: FAQ
@@ -29,7 +27,7 @@ params:
         - title: Privacy
           Permalink: /privacy
         - title: Roadmap
-          Permalink: /roadmap
+          Permalink: https://github.com/GitJournal/GitJournal/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc
     - title: Social
       links:
         - title: Twitter
