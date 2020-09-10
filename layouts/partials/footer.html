@@ -1,33 +1,23 @@
+{{ $footer := .Site.Params.footer }}
+
 <footer class="py-12 bg-gray-100 min-w-full">
+
   <div class="flex items- start justify-center mt-8">
+    {{ range $footer }}
     <div class="px-4">
-      <h2 class="text-xl font-medium">GitJournal</h2>
+      <h2 class="text-xl font-medium">{{ .title }}</h2>
       <ul class="mt-3">
-        <li class="my-1">License Information</li>
-        <li class="my-1">About Us</li>
-        <li class="my-1">FAQ</li>
-        <li class="my-1">Privacy</li>
-        <li class="my-1">Roadmap</li>
+        {{ range .links }}
+        <a class="hover:text-green-500" href="{{ .Permalink }}">
+          <li class="my-1">{{ .title }}</li>
+        </a>
+        {{ end }}
       </ul>
+
     </div>
-    <div class="px-4">
-      <h2 class="text-xl font-medium">Social</h2>
-      <ul class="mt-3">
-        <li class="my-1">Follow Us on Twitter</li>
-        <li class="my-1">Community Discord</li>
-        <li class="my-1">Community Forum</li>
-      </ul>
-    </div>
-    <div class="px-4">
-      <h2 class="text-xl font-medium">Spread the word</h2>
-      <ul class="mt-3">
-        <li class="my-1">Featured on Product Hunt</li>
-        <li class="my-1">Like Us on Alternative To</li>
-        <li class="my-1">Like us on Slack</li>
-        <li class="my-1">Stack us on YourStack</li>
-      </ul>
-    </div>
+    {{ end }}
   </div>
+
   <div class="mt-12">
     <div class="text-center my-2">
       © 2020 Vishesh Handa

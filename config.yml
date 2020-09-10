@@ -4,13 +4,75 @@ title: GitJournal
 
 params:
   navbar:
-    - title: Privacy
-      Permalink: /privacy
-    - title: Support
-      Permalink: /support
+    - title: Features
+      Permalink: /features
+    - title: Pricing
+      Permalink: /pricing
+    - title: Docs
+      Permalink: /docs
     - title: Contribute
       Permalink: /contribute
     - title: Blog
       Permalink: /blog
     - title: About
       Permalink: /about
+
+  footer:
+    - title: GitJournal
+      links:
+        - title: License Information
+          Permalink: /license
+        - title: About Us
+          Permalink: /about
+        - title: FAQ
+          Permalink: /support
+        - title: Privacy
+          Permalink: /privacy
+        - title: Roadmap
+          Permalink: /roadmap
+    - title: Social
+      links:
+        - title: Twitter
+          Permalink: https://twitter.com/GitJournal_io
+        - title: Discord
+          Permalink: https://discord.gg/abBwyEK
+        - title: Reddit
+          Permalink: https://reddit.com/r/GitJournal
+        - title: Newsletter
+          Permalink: /newsletter
+    - title: Spread the Word
+      links:
+        - title: Featured on Product Hunt
+          Permalink: /
+        - title: Like Us on Alternative To
+          Permalink: https://alternativeto.net/software/gitjournal/
+        - title: Like Us on Slack
+          Permalink: /
+        - title: Stack us on YourStack
+          Permalink: /
+# Footer
+# Product
+#  Changelog
+#  Pricing
+#  Support
+
+# Social Links
+#  Blog
+#  Twitter
+#  Reddit
+#  Discord
+
+# Spread the word
+# - websites
+
+# Help out
+## Translations
+## Voting
+## Filling out the user survey
+## Donating
+
+## Newsletter
+
+## Maybe Features can be removed?
+
+# Screenshots
