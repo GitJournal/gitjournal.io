@@ -1,4 +1,4 @@
 ---
 title: Newsletter
-draft: true
+type: newsletter
 ---
