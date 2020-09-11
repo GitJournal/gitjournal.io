@@ -2,8 +2,8 @@
 title: About Me
 ---
 
-Hi!
-My name is Vishesh.
+## Hi!
+### My name is Vishesh.
 
 I'm the author of GitJournal. I've been writing [open source software](https://github.com/vhanda/) for over a decade, and care a lot about data privacy and making it more accessible to the rest of the world.
 
