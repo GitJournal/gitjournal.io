@@ -3,7 +3,7 @@ title: GitJournal May Update
 date: 2020-06-12
 ---
 
-[GitJournal](https://gitjournal.io) is a mobile first note taking application integrated with Git. It’s based on the idea that you should have control over your data, and that we all multiple devices in our daily lives, and therefore need to be in control of the mechanism to synchronize our notes across these devices.
+GitJournal is a mobile first note taking application integrated with Git. It’s based on the idea that you should have control over your data, and that we all have multiple devices in our daily lives, and therefore need to be in control of the mechanism to synchronize our notes across these devices.
 
 Git was chosen as the method to do so, as there are already many [commercial provides of Git](https://github.com/GitJournal/GitJournal/blob/master/docs/git_hosts.md), and setting up your own Git Server has a much lower barrier to entry than any other setup.
 
