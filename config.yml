@@ -1,6 +1,11 @@
-baseURL: https://gitjournal.io
+baseURL: https://gitjournal.io/
 languageCode: en-us
 title: GitJournal
+googleAnalytics: UA-132430504-1
+
+disableKinds:
+  - taxonomy
+  - taxonomyTerm
 
 params:
   navbar:
