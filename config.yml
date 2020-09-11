@@ -4,8 +4,6 @@ title: GitJournal
 
 params:
   navbar:
-    - title: Features
-      Permalink: /features
     - title: Pricing
       Permalink: /pricing
     - title: Docs
