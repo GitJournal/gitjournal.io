@@ -1,4 +1,4 @@
 ---
 title: Pricing
-draft: true
+type: pricing
 ---

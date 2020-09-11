@@ -1,0 +1,30 @@
+- title: Basic Search
+  date: 2019-09-05
+  pro: false
+- title: Dark Mode
+  date: 2019-09-25
+  pro: false
+- title: Raw Editor
+  date: 2019-10-07
+  pro: false
+- title: Folder Support
+  date: 2019-12-04
+  pro: false
+- title: Customize Default File Name
+  date: 2019-12-20
+  pro: false
+- title: Customize Note Meta Data
+  date: 2019-12-20
+  pro: false
+- title: Note Tags
+  date: 2019-12-21
+  pro: true
+- title: Note Backlinks
+  date: 2019-12-22
+  pro: true
+- title: Customize Home Screen
+  date: 2019-12-23
+  pro: true
+- title: Zen Mode
+  date: 2019-12-24
+  pro: true

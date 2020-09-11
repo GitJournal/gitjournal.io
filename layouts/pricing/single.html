@@ -1,0 +1,96 @@
+{{ define "main" }}
+
+<h1 class="text-5xl text-center font-medium pb-2"> A fair price for you</h1>
+<h1 class="text-md text-center font-light pb-20">GitJournal is 100% Open Source and will always be</h1>
+
+<div class="container max-w-2xl mx-auto">
+  <!-- <div class="flex flex-row justify-center">
+    <div class="flex flex-col">
+      <h2 class="font-bold mx-4">Feature</h2>
+      <div class="border-2">Intro to CSS</div>
+      <div class="border-2">Tags Support</div>
+      <div class="border-2">Something Else</div>
+    </div>
+    <h2 class="font-bold mx-4">Basic</h2>
+    <h2 class="font-bold mx-4">Pro</h2>
+  </div> -->
+
+  <!-- <div class="flex flex-row justify-center">
+    <h2>Intro to CSS</h2>
+    <h2>Basic</h2>
+    <h2>Pro</h2>
+  </div> -->
+
+  <table class="table-auto">
+    <thead>
+      <tr>
+        <th class="w-1/2 px-4 py-2">Feature</th>
+        <th class="w-1/4 px-4 py-2">
+          <div>Basic</div>
+          <div class="font-light pt-2 text-sm text-right">Android - Free&nbsp;<br>Ios - 3.99$</div>
+        </th>
+        <th class="w-1/4 px-4 py-2">
+          <div>Pro</div>
+          <div class="font-light pt-2 text-sm">Pay-what-you-want (with a minimum)</div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range .Site.Data.features }}
+      <tr>
+        <td class="border px-4 py-2">{{ .title }}</td>
+        <td class="border px-4 py-2 text-green-500">
+          {{ if not .pro }}
+          {{ partial "check" . }}
+          {{ end }}
+        </td>
+        <td class="border px-4 py-2 text-green-500">{{ partial "check" . }}</td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+
+  <div class="mt-16">
+    <h2>The Pro version can be purchased via -</h2>
+    <ol class="mt-4">
+      <li class="mt-2"><span class="font-bold mr-3">One Time Payment:</span><span>Permanently enables all Pro features currently
+          in
+          GitJournal
+          and
+          new features added in the following 12 months</span></li>
+      <li class="mt-2"><span class="font-bold mr-3">Monthly Subscription:</span><span>Enables all Pro Features. After 12 months or
+          after paying
+          the
+          min yearly purchase, you will get all the benefits of the 'One Time Purchase'</span></li>
+    </ol>
+
+  </div>
+</div>
+
+
+<!-- Rough plan -
+
+There are 2 versions of GitJournal - Basic and Pro. Both versions are 100% Open Source.
+
+The basic version is free to use on [Android](link) and costs about 3-4$ on [Ios](link).
+
+Differences between Basic and Pro -
+
+Create a kind of table with each feature
+
+GitJournal operates on a pay-what-you-want model (with a minimum). There are currently 2 ways to get the Pro version -
+
+One Time Purchase
+Show the same slider? (clearly mark out the minimum)
+
+> Write the text from the App
+
+
+Monthly Subscription
+Show the same slider? (clearly mark out the minimum)
+
+> Write the text from the App -->
+
+<!-- The stripe pricing page is interesting -->
+
+{{ end }}
