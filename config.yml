@@ -31,6 +31,8 @@ params:
           Permalink: /privacy
         - title: Roadmap
           Permalink: https://github.com/GitJournal/GitJournal/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc
+    # Add Changelog
+    # Add Screenshots
     - title: Social
       links:
         - title: Twitter
@@ -43,37 +45,13 @@ params:
           Permalink: /newsletter
     - title: Spread the Word
       links:
-        - title: Featured on Product Hunt
-          Permalink: /
+        - title: Star the Project on GitHub
+          Permalink: https://github.com/GitJournal/GitJournal
+        #- title: Featured on Product Hunt
+        #  Permalink: /
         - title: Like Us on Alternative To
           Permalink: https://alternativeto.net/software/gitjournal/
-        - title: Like Us on Slack
-          Permalink: /
+        #- title: Like Us on Slant
+        #  Permalink: / -> Requires someone to put me on Slant
         - title: Stack us on YourStack
-          Permalink: /
-# Footer
-# Product
-#  Changelog
-#  Pricing
-#  Support
-
-# Social Links
-#  Blog
-#  Twitter
-#  Reddit
-#  Discord
-
-# Spread the word
-# - websites
-
-# Help out
-## Translations
-## Voting
-## Filling out the user survey
-## Donating
-
-## Newsletter
-
-## Maybe Features can be removed?
-
-# Screenshots
+          Permalink: https://yourstack.com/products/gitjournal
