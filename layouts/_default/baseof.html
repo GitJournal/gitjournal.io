@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GitJournal BaseOf</title>
+  <title>{{ .Site.Title }}</title>
+
+  {{ if .Keywords }}
+  <meta name="keywords" content='{{ delimit .Keywords " " }}' />
+  {{ end }}
 
   {{/*  // Assets information  */}}
   {{ $cssOpts := (dict "targetPath" "styles/main.css" "enableSourceMap" true ) }}
