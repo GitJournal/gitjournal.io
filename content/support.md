@@ -26,9 +26,9 @@ GitJournal's [desktop app](https://github.com/GitJournal/GitJournal/issues/137) 
 
 Here are some of our recommendations -
 
-* [Notable](https://notable.app/)
-* [Zettlr](zettlr.com)
 * [Foam](https://foambubble.github.io/foam/)
+* [Zettlr](zettlr.com)
+* [Notable](https://notable.app/) [Not Open Source]
 * [Obsidian](https://obsidian.md/) [Not Open Source]
 
 Each of these Note taking applications is built around simple markdown files, which can then be synced via Git.
