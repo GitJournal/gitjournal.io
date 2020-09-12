@@ -5,7 +5,7 @@ set -eu
 REPO_PATH=../GitJournal.github.io
 
 rm -rf public
-hugo
+npm run build
 rm -rf "$REPO_PATH/*"
 cp -r public/* "$REPO_PATH/"
 cd "$REPO_PATH"
