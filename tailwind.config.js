@@ -24,6 +24,7 @@ module.exports = {
     extend: {},
   },
   variants: {},
+  important: "html", // For https://github.com/tailwindlabs/tailwindcss-typography/issues/32
   plugins: [
     require("@tailwindcss/typography"),
     require("tailwindcss-debug-screens"),
