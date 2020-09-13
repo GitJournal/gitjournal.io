@@ -4,6 +4,7 @@ module.exports = {
     typography: {
       default: {
         css: {
+          color: "#1a202c",
           h1: {
             "margin-top": "2em",
           },
