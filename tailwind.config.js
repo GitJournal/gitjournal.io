@@ -1,6 +1,15 @@
 module.exports = {
   purge: [],
   theme: {
+    typography: {
+      default: {
+        css: {
+          h1: {
+            "margin-top": "2em",
+          },
+        },
+      },
+    },
     fontFamily: {
       mono: [
         '"Roboto Mono"',
