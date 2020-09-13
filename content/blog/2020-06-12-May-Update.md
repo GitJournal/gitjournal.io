@@ -33,7 +33,7 @@ One of the top voted [issues](https://github.com/GitJournal/GitJournal/issues/10
 
 Images are stored in same directory as the image or you can change it to store them in a specific folder.
 
-![Save Images into your Git Repo](https://cdn-images-1.medium.com/max/576/1*vxBLtHVgIvI6N31eBAQNEA.gif)
+{{< img src="https://cdn-images-1.medium.com/max/576/1*vxBLtHVgIvI6N31eBAQNEA.gif" >}}
 
 # Number of Pending Changes
 
@@ -41,13 +41,13 @@ GitJournal makes a new commit after every change performed. These changes, by de
 
 The synchronize button now shows a helpful number to indicate the number of changes.
 
-![](https://cdn-images-1.medium.com/max/1440/1*8147f9DNEbiklrV3mLIA5A.jpeg)
+{{< img src="https://cdn-images-1.medium.com/max/1440/1*8147f9DNEbiklrV3mLIA5A.jpeg" >}}
 
 # Note Modification State
 
 A small usability feature was added to clearly convey when a note has been modified -
 
-![Indicate via ✗ or ✓ when the Note has been modified](https://cdn-images-1.medium.com/max/2160/1*7bEuacW1MWsybR7aGBk80A.gif)
+{{< img src="https://cdn-images-1.medium.com/max/2160/1*7bEuacW1MWsybR7aGBk80A.gif" alt="Indicate via ✗ or ✓ when the Note has been modified" >}}
 
 # Custom Repo during Setup Process
 
@@ -55,11 +55,11 @@ GitJournal can be used with any repo that supports SSH access. However, setting 
 
 Here is what the process for a custom repo -
 
-![GitJournal works with any Git Repo over SSH](https://cdn-images-1.medium.com/max/576/1*CJ3jTwAau1Mr9BA4BACDkQ.gif)
+{{< img src="https://cdn-images-1.medium.com/max/576/1*CJ3jTwAau1Mr9BA4BACDkQ.gif" alt="GitJournal works with any Git Repo over SSH" >}}
 
 In order to make this process simpler, GitJournal integrates with GitHub and GitLab and lets us handle all of this seamlessly. This comes at a price, though, it requires giving GitJournal access to all your public and private repositories. Even though GitJournal doesn’t have any server side component and the OAuth token is only temporarily held by the app, it can make people uncomfortable. Which is why we offer, both an automatic mode and manual mode, where we guide you through the steps of adding the SSH keys.
 
-![GitJournal’s Quick Repo Setup](https://cdn-images-1.medium.com/max/576/1*LaAw5PQd76xc9mnI4njpcw.gif)
+{{< img src="https://cdn-images-1.medium.com/max/576/1*LaAw5PQd76xc9mnI4njpcw.gif" alt="GitJournal’s Quick Repo Setup" >}}
 
 Earlier the setup would only automatically create a repo called **“journal”, **from now on you can choose any repo, or create a new one within the app.
 
@@ -87,7 +87,7 @@ I hope no one will ever need to use this feature, but bugs are inevitable, and s
 
 GitJournal has always supported linking to other notes via the [classical markdown syntax](https://www.markdownguide.org/basic-syntax/#links). It’s an easy way to create a connect your notes together. Now, with each note when previewing the note, you’ll also see what other notes link to this note -
 
-![](https://cdn-images-1.medium.com/max/1440/1*1nhRErlUzMMgT_NVBw-0sQ.jpeg)
+{{< img src="https://cdn-images-1.medium.com/max/1440/1*1nhRErlUzMMgT_NVBw-0sQ.jpeg" >}}
 
 For the full list of new features, please read the [changelog](https://github.com/GitJournal/GitJournal/blob/master/CHANGELOG.md).
 
