@@ -3,6 +3,12 @@ languageCode: en-us
 title: GitJournal
 googleAnalytics: UA-132430504-1
 
+privacy:
+  googleAnalytics:
+    anonymizeIP: true
+    respectDoNotTrack: true
+    useSessionStorage: true
+
 disableKinds:
   - taxonomy
   - taxonomyTerm
