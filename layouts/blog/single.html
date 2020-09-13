@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<article class="prose xl:prose-xl">
+  <h1 class="text-4xl mt-1 m-0">{{ .Page.Title }}</h1>
+  <h2 class="text-sm">{{ .Params.subtitle }}</h2>
+
+  <div class="mt-12">
+    {{ .Page.Content }}
+  </div>
+</article>
+
+<hr>
+
+<div class="mt-8 text-gray-900">
+  Want to talk about this post? <a class="hover:text-green-500 underline" href="{{ .Params.reddit }}">Discuss this on Reddit →</a>
+</div>
+
+{{ end }}
