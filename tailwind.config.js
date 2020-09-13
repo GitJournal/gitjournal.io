@@ -7,6 +7,11 @@ module.exports = {
           h1: {
             "margin-top": "2em",
           },
+          a: {
+            "&:hover": {
+              color: "#48bb78",
+            },
+          },
         },
       },
     },
