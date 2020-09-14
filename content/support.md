@@ -59,15 +59,9 @@ fi
 
 Change `NOTES_FOLDER` to where your notes are present.
 
-## Pro Mode
+## Discounts
 
-Sustaining an Open Source Project can be challenging in the long term. The idea with GitJournal is to be a 100% Open Source Project - No Open Core model. Currently we are experimenting by having a subscription based Pro mode, which can be activated by paying the amount you feel appropriate.
-
-No matter what you pay, all pro features will be accessible to you.
-
-We didn't feel comfortable charging a standard 5-10$/month as that can be a significant amount in some countries. Depending on your country the lowest amount might be 1-2$ / month. If this amount is too high, please contact me, and I can accordingly lower it for that country.
-
-Additionally, if you really like GitJournal, but cannot afford it, please [email me](mailto:vhanda@gitjournal.io). I'll be happy to give you Pro access for free. Money isn't the primary motivator for this project - It's more important that people have control over their data.
+If you really like GitJournal, but cannot afford it, please [email me](mailto:vhanda@gitjournal.io). I'll be happy to give you Pro access for free. Money isn't the primary motivator for this project - It's more important that people have control over their data.
 
 ## What about Encryption?
 
