@@ -39,6 +39,9 @@ window.onload = function () {
   }
 
   const form = document.getElementById("gj-newsletter");
+  if (form == null) {
+    return;
+  }
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
