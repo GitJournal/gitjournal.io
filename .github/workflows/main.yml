@@ -18,6 +18,16 @@ jobs:
         with:
           node-version: "14.10.1"
 
+      - name: Build Changelog
+        run: |
+          set -eu
+          sudo snap install jq
+          wget -q https://github.com/sclevine/yj/releases/download/v5.0.0/yj-linux
+          sudo mv yj-linux /usr/bin/yj
+          sudo chmod +x /usr/bin/yj
+          wget -q https://raw.githubusercontent.com/GitJournal/GitJournal/master/changelog.yml
+          ./build_changelog.sh
+
       - name: Cache dependencies
         uses: actions/cache@v1
         with:
