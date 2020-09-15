@@ -6,7 +6,7 @@
 
     {{ if .image }}
     {{ $imgUrl := printf "/images/releases/%v/%s" $.version .image }}
-    <img class="w-2/3 md:w-1/2 mx-auto rounded" src="{{ $imgUrl }}" alt="">
+    <img class="w-4/5 md:w-1/2 mx-auto rounded shadow-xs" src="{{ $imgUrl }}" alt="">
     {{ end }}
   </li>
   {{ end }}
