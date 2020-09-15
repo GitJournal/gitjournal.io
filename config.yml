@@ -19,8 +19,8 @@ params:
       Permalink: /pricing
     - title: Docs
       Permalink: /support
-    - title: Contribute
-      Permalink: /contribute
+    - title: Changelog
+      Permalink: /changelog
     - title: Blog
       Permalink: /blog
     - title: About
@@ -31,6 +31,8 @@ params:
       links:
         - title: About Us
           Permalink: /about
+        - title: Contribute
+          Permalink: /contribute
         - title: FAQ
           Permalink: /support
         - title: Privacy
