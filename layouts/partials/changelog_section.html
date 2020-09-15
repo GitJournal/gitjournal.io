@@ -2,7 +2,9 @@
   {{ range .items }}
   <li>
     <h3>{{ .title }}</h3>
-    <p>{{ .text }}</p>
+    <p>
+      {{ .text | replaceRE "[#](\\d+)" "<a href=\"https://github.com/GitJournal/GitJournal/issues/$1\">#$1</a>" | safeHTML }}
+    </p>
 
     {{ if .image }}
     {{ $imgUrl := printf "/images/releases/%v/%s" $.version .image }}
