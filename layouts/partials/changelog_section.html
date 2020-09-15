@@ -1,0 +1,13 @@
+<ul>
+  {{ range .items }}
+  <li>
+    <h3>{{ .title }}</h3>
+    <p>{{ .text }}</p>
+
+    {{ if .image }}
+    {{ $imgUrl := printf "/images/releases/%v/%s" $.version .image }}
+    <img class="w-2/3 md:w-1/2 mx-auto rounded" src="{{ $imgUrl }}" alt="">
+    {{ end }}
+  </li>
+  {{ end }}
+</ul>

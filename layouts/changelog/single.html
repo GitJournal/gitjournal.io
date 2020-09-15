@@ -3,60 +3,24 @@
 {{ $version := .Params.version }}
 
 <article class="prose xl:prose-xl">
-  <h1 class="text-4xl mt-1 m-0">Version {{ $version }}</h1>
-  <h2 class="text-sm">{{ .Page.PublishDate.Format "2006-01-02" }}</h2>
+  <h1>Version {{ $version }}</h1>
+  <h4>{{ .Page.PublishDate.Format "2006-01-02" }}</h4>
 
   {{ if .Params.features }}
-  <h2 class="text-xl my-16">Features</h2>
-  <ul>
-    {{ range .Params.features }}
-    <li>
-      <h3>{{ .title }}</h3>
-      <p>{{ .text }}</p>
-
-      {{ if .image }}
-      {{ $imgUrl := printf "/images/releases/%v/%s" $version .image }}
-      <img src="{{ $imgUrl }}" alt="">
-      {{ end }}
-    </li>
-    {{ end }}
-  </ul>
+  <h2 class="text-xl mt-16">Features</h2>
+  {{ partial "changelog_section" (dict "items" .Params.features "version" $version) }}
   {{ end }}
 
 
   {{ if .Params.improvements }}
-  <h2 class="text-xl my-16">Improvements</h2>
-  <ul>
-    {{ range .Params.improvements }}
-    <li>
-      <h3>{{ .title }}</h3>
-      <p>{{ .text }}</p>
-
-      {{ if .image }}
-      {{ $imgUrl := printf "/images/releases/%v/%s" $version .image }}
-      <img src="{{ $imgUrl }}" alt="">
-      {{ end }}
-    </li>
-    {{ end }}
-  </ul>
+  <h2 class="text-xl mt-16">Improvements</h2>
+  {{ partial "changelog_section" (dict "items" .Params.improvements "version" $version) }}
   {{ end }}
 
 
   {{ if .Params.bugs }}
-  <h2 class="text-xl my-16">Bug Fixes</h2>
-  <ul>
-    {{ range .Params.bugs }}
-    <li>
-      <h3>{{ .title }}</h3>
-      <p>{{ .text }}</p>
-
-      {{ if .image }}
-      {{ $imgUrl := printf "/images/releases/%v/%s" $version .image }}
-      <img src="{{ $imgUrl }}" alt="">
-      {{ end }}
-    </li>
-    {{ end }}
-  </ul>
+  <h2 class="text-xl mt-16">Bug Fixes</h2>
+  {{ partial "changelog_section" (dict "items" .Params.bugs "version" $version) }}
   {{ end }}
 
 </article>
