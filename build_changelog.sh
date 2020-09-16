@@ -7,7 +7,7 @@ OUTPUT_DIR='content/changelog'
 
 mkdir -p $OUTPUT_DIR
 
-VERSIONS=$(cat "$INPUT_FILE" | yj | jq '.[].version')
+VERSIONS=$(cat "$INPUT_FILE" | yj | jq -r '.[].version')
 
 for v in $VERSIONS; do
     OUTPUT_FILE=$OUTPUT_DIR/$v.md
@@ -15,6 +15,6 @@ for v in $VERSIONS; do
     rm -f "$OUTPUT_FILE"
 
     echo '---' >>"$OUTPUT_FILE"
-    cat "$INPUT_FILE" | yj | jq ".[] | select( .version | contains($v))" | yj -r >>"$OUTPUT_FILE"
+    cat "$INPUT_FILE" | yj | jq ".[] | select(.version==\"$v\")" | yj -r >>"$OUTPUT_FILE"
     echo '---' >>"$OUTPUT_FILE"
 done
