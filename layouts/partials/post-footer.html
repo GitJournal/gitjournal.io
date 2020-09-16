@@ -1,13 +1,54 @@
-<hr class="mt-16">
-
 {{ if .Params.reddit }}
-
 <div class="my-8 text-gray-900">
   Want to talk about this post? <a class="hover:text-green-500 underline" href="{{ .Params.reddit }}">Discuss this on Reddit →</a>
 </div>
 {{ else }}
 <div class="mt-16"></div>
 {{ end }}
+
+<hr class="">
+
+{{ if or .PrevInSection .NextInSection }}
+<div class="flex flex-row justify-between my-8">
+  {{ with .PrevInSection }}
+  {{ $title := .Title }}
+  {{ if not $title }}
+  {{ $title = (print "Version " .Params.version) }}
+  {{ end }}
+
+  <a href="{{ .Permalink }}" class="text-md font-semibold flex flex-row items-center hover:text-green-500">
+    <svg class="text-current w-8 mr-4 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+      stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+    </svg>
+    {{ $title }}
+  </a>
+  {{ else }}
+  &nbsp
+  {{ end }}
+
+
+  {{ with .NextInSection }}
+  {{ $title := .Title }}
+  {{ if not $title }}
+  {{ $title = (print "Version " .Params.version) }}
+  {{ end }}
+
+  <a href="{{ .Permalink }}" class="text-md  font-semibold flex flex-row items-center hover:text-green-500">
+    {{ $title }}
+    <svg class="text-current w-8 ml-4 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+      stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+    </svg>
+  </a>
+  {{ end }}
+</div>
+{{ else }}
+<div class="mt-12"></div>
+{{ end }}
+
+
+
 
 
 {{ partial "newsletter" . }}
