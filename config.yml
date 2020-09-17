@@ -49,6 +49,9 @@ params:
           Permalink: https://discord.gg/abBwyEK
         - title: Reddit
           Permalink: https://reddit.com/r/GitJournal
+        - title: Mastodon
+          Permalink: https://fosstodon.org/@gitjournal
+          rel: me
         - title: Newsletter
           Permalink: /newsletter
     - title: Spread the Word
