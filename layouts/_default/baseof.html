@@ -22,7 +22,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="{{ "images/favicon/favicon-16x16.png" | relURL }}">
   <link rel="manifest" href="{{ "images/favicon/site.webmanifest" | relURL }}">
 
-  {{ template "_internal/google_analytics_async.html" . }}
+  {{ if not .Site.IsServer }}
+  <script async defer data-domain="gitjournal.io" src="https://plausible.io/js/plausible.js"></script>
+  {{ end }}
 </head>
 
 <body class='{{ cond .Site.IsServer "debug-screens" "" }}'>
