@@ -3,12 +3,6 @@ languageCode: en-us
 title: GitJournal
 Paginate: 100
 
-privacy:
-  googleAnalytics:
-    anonymizeIP: true
-    respectDoNotTrack: true
-    useSessionStorage: true
-
 disableKinds:
   - taxonomy
   - taxonomyTerm
