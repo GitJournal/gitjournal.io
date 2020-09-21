@@ -1,5 +1,8 @@
 name: CI
-on: push
+on:
+  push:
+  repository_dispatch:
+
 jobs:
   deploy:
     runs-on: ubuntu-18.04
