@@ -2,6 +2,7 @@
 title: GitJournal May Update
 date: 2020-06-12
 reddit: https://www.reddit.com/r/GitJournal/comments/h7ibi2/gitjournal_may_update/
+cover: https://cdn-images-1.medium.com/max/5120/1*zS57XsyO9XNgyZJIMjyYSg.jpeg
 ---
 
 GitJournal is a mobile first note taking application integrated with Git. It’s based on the idea that you should have control over your data, and that we all have multiple devices in our daily lives, and therefore need to be in control of the mechanism to synchronize our notes across these devices.
