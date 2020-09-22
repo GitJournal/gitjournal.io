@@ -38,7 +38,11 @@
     <tbody>
       {{ range $i, $f := .Site.Data.features }}
       <tr :class="{{ modBool $i 2 }} ? 'bg-gray-100': 'bg-transparent'">
-        <td class="border px-4 py-2">{{ $f.title }}</td>
+        <td class="border px-4 py-2">
+          {{ if $f.href }}<a class="hover:text-green-500" href="{{$f.href}}"> {{ end }}
+            {{ $f.title }}
+            {{ if $f.href }}</a> {{ end }}
+        </td>
         <td class="border px-4 py-2 text-green-500">
           {{ if not $f.pro }}
           {{ partial "check" . }}
