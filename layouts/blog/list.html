@@ -14,21 +14,24 @@
       <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
         style="background-image: url('{{ $imgUrl }}')">
       </div>
-      <div
-        class="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-        <div class="mb-8">
-          <div class="text-black font-bold text-xl mb-2"><a class="hover:text-green-500" href="{{ .Permalink }}">{{ .Title }}</a>
+      <a href="{{ .Permalink }}">
+        <div
+          class="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            <div class="text-black font-bold text-xl mb-2">
+              {{ .Title }}
+            </div>
+            <p class="text-grey-darker text-base"> {{slicestr .Summary 0 200}} ... </p>
           </div>
-          <p class="text-grey-darker text-base"> {{slicestr .Summary 0 200}} ... </p>
-        </div>
-        <div class="flex items-center">
-          <img class="w-10 h-10 rounded-full mr-4" src="/images/vhanda.jpeg" alt="Avatar of Vishesh Handa">
-          <div class="text-sm">
-            <p class="text-black leading-none">Vishesh Handa</p>
-            <p class="text-grey-dark">{{ .Date.Format "Jan 2" }}</p>
+          <div class="flex items-center">
+            <img class="w-10 h-10 rounded-full mr-4" src="/images/vhanda.jpeg" alt="Avatar of Vishesh Handa">
+            <div class="text-sm">
+              <p class="text-black leading-none">Vishesh Handa</p>
+              <p class="text-grey-dark">{{ .Date.Format "Jan 2" }}</p>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     </div>
 
 
