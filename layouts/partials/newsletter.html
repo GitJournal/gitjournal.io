@@ -1,7 +1,18 @@
+{{ $title := "Want product news and updates?" }}
+{{ $subtitle := "Subscribe to the GitJournal newsletter. Roughly one email a month." }}
+
+{{ if isset . "title" }}
+{{ $title = .title }}
+{{ end }}
+
+{{ if isset . "subtitle" }}
+{{ $subtitle = .subtitle }}
+{{ end }}
+
 <div v-if="!newsletter.success && !newsletter.fail" class="bg-white shadow-md rounded px-4 py-6">
 
-  <div class="text-lg font-bold">Want product news and updates?</div>
-  <div class="text-sm mt-2">Subscribe to the GitJournal newsletter. Roughly one email a month.</div>
+  <div class="text-lg font-bold">{{ $title }}</div>
+  <div class="text-sm mt-2">{{ $subtitle }}</div>
 
   <form id='gj-newsletter' class="flex flex-wrap md:flex-no-wrap my-4">
     <input
