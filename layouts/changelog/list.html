@@ -8,12 +8,6 @@
     {{ range $pag.Pages }}
 
 
-    {{/*    */}}
-
-    {{ $imgUrl := printf "/images/releases/%v/%s" .Params.version .Params.coverImage }}
-    {{/*  Get a fallback if no image is present  */}}
-
-
     <li class="max-w-3xl w-full pb-8 pl-2">
       <a href="{{ .Permalink }}">
 
