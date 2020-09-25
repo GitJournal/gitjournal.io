@@ -2,9 +2,6 @@
 
 <h1 class="gj-title pb-20">Changelog</h1>
 
-{{ $latest :=  index .Pages 0 }}
-<meta http-equiv="refresh" content="0; url={{ $latest.Permalink }}" />
-
 <div class="">
   <ul class="list-disc mx-auto">
     {{ $pag := .Paginate .Pages }}
