@@ -59,10 +59,6 @@ fi
 
 Change `NOTES_FOLDER` to where your notes are present.
 
-## Discounts
-
-If you really like GitJournal, but cannot afford it, please [email me](mailto:vhanda@gitjournal.io). I'll be happy to give you Pro access for free. Money isn't the primary motivator for this project - It's more important that people have control over their data.
-
 ## What about Encryption?
 
 GitJournal does not store any of your notes. They are stored by your Git Host such as GitHub or Gitlab. We do [plan](https://github.com/GitJournal/GitJournal/issues/182) to eventually offer encrypted Git Hosting, but for now the main focus is improving the mobile app experience.
