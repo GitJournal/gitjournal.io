@@ -27,7 +27,7 @@ GitJournal's [desktop app](https://github.com/GitJournal/GitJournal/issues/137) 
 Here are some of our recommendations -
 
 * [Foam](https://foambubble.github.io/foam/)
-* [Zettlr](zettlr.com)
+* [Zettlr](https://zettlr.com)
 * [Notable](https://notable.app/) [Not Open Source]
 * [Obsidian](https://obsidian.md/) [Not Open Source]
 
