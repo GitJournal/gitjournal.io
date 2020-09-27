@@ -13,7 +13,7 @@
 
 {{ $latestChangeLog := (index (where .Site.Pages "Params.version" $latestVersion) 0) }}
 
-<header class="container mx-auto sm:flex sm:justify-between sm:max-w-3xl xl:max-w-5xl">
+<header class="container mx-auto sm:flex sm:justify-between sm:max-w-3xl xl:max-w-5xl mb-16">
   <div class="flex items-center justify-between px-4 py-2" :class="isOpen ? 'shadow-sm' : 'shadow-none'">
     <div>
       <a href="/">
