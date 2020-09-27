@@ -8,9 +8,13 @@ You can help via -
 
 * [Translating GitJournal](https://poeditor.com/join/project?hash=P1vNzZ0uOJ)
 * [Voting on Existing Issues](https://github.com/GitJournal/GitJournal/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc)
-* [Requesting new Features](https://github.com/GitJournal/GitJournal/issues/new)
+* [Reporting Bugs](https://github.com/GitJournal/GitJournal/issues/new)
 * [Donating via Paypal](https://paypal.me/visheshhanda)
+* Purchasing the Pro Version
 
-Additionally, if GitJournal has been useful for you, please tell others about it or post about it on your favorite site.
+Additionally, if GitJournal has been useful for you, please consider -
 
-Feel free to send me an email at [feedback@gitjournal.io](mailto:feedback@gitjournal.io)
+* Writing a review on your favorite App Store
+* Liking and writing a review on ["Alternative To"](https://alternativeto.net/software/gitjournal/)
+* Writing a review on ["Your Stack"](https://yourstack.com/products/gitjournal)
+* Tweeting about GitJournal and spreading the word
