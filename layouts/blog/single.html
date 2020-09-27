@@ -1,14 +1,18 @@
 {{ define "main" }}
 
-<article class="prose xl:prose-xl">
-  <h1 class="text-4xl mt-1 m-0">{{ .Page.Title }}</h1>
-  <h2 class="text-sm">{{ .Params.subtitle }}</h2>
+<div class="px-4">
 
-  <div class="mt-12">
-    {{ .Page.Content }}
-  </div>
-</article>
+  <article class="prose xl:prose-xl">
+    <h1 class="text-4xl mt-1 m-0">{{ .Page.Title }}</h1>
+    <h2 class="text-sm">{{ .Params.subtitle }}</h2>
 
-{{ partial "post-footer" . }}
+    <div class="mt-12">
+      {{ .Page.Content }}
+    </div>
+  </article>
+
+  {{ partial "post-footer" . }}
+
+</div>
 
 {{ end }}

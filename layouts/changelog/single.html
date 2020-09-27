@@ -2,29 +2,33 @@
 
 {{ $version := .Params.version }}
 
-<article class="prose xl:prose-xl">
-  <h1>Version {{ $version }}</h1>
-  <h4>{{ .Page.PublishDate.Format "2006-01-02" }}</h4>
+<div class="px-4">
 
-  {{ if .Params.features }}
-  <h2 class="text-xl mt-16">Features</h2>
-  {{ partial "changelog_section" (dict "items" .Params.features "version" $version) }}
-  {{ end }}
+  <article class="prose xl:prose-xl">
+    <h1>Version {{ $version }}</h1>
+    <h4>{{ .Page.PublishDate.Format "2006-01-02" }}</h4>
 
-
-  {{ if .Params.improvements }}
-  <h2 class="text-xl mt-16">Improvements</h2>
-  {{ partial "changelog_section" (dict "items" .Params.improvements "version" $version) }}
-  {{ end }}
+    {{ if .Params.features }}
+    <h2 class="text-xl mt-16">Features</h2>
+    {{ partial "changelog_section" (dict "items" .Params.features "version" $version) }}
+    {{ end }}
 
 
-  {{ if .Params.bugs }}
-  <h2 class="text-xl mt-16">Bug Fixes</h2>
-  {{ partial "changelog_section" (dict "items" .Params.bugs "version" $version) }}
-  {{ end }}
+    {{ if .Params.improvements }}
+    <h2 class="text-xl mt-16">Improvements</h2>
+    {{ partial "changelog_section" (dict "items" .Params.improvements "version" $version) }}
+    {{ end }}
 
-</article>
 
-{{ partial "post-footer" . }}
+    {{ if .Params.bugs }}
+    <h2 class="text-xl mt-16">Bug Fixes</h2>
+    {{ partial "changelog_section" (dict "items" .Params.bugs "version" $version) }}
+    {{ end }}
+
+  </article>
+
+  {{ partial "post-footer" . }}
+
+</div>
 
 {{ end }}
