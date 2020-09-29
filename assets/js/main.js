@@ -46,4 +46,70 @@ window.onload = function () {
       submitNewsletter();
     });
   }
+
+  const caroE = document.getElementById("caro");
+  if (caroE != null) {
+    const prev = document.getElementById("caro-prev");
+    const next = document.getElementById("caro-next");
+
+    const images = [
+      "https://gitjournal.io/screenshots/android/2020-09-28/en-GB/images/phoneScreenshots/Nexus 6P-11.png",
+      "https://gitjournal.io/screenshots/android/2020-09-28/en-GB/images/phoneScreenshots/Nexus 6P-18.png",
+      "https://gitjournal.io/screenshots/android/2020-09-28/en-GB/images/phoneScreenshots/Nexus 6P-19.png",
+      "https://gitjournal.io/screenshots/android/2020-09-28/en-GB/images/phoneScreenshots/Nexus 6P-20.png",
+    ];
+
+    prev.onclick = function () {
+      const caro = $("#caro");
+      var src = caro.attr("src");
+
+      var i = images.indexOf(src);
+      i--;
+      if (i >= images.length) {
+        i = 0;
+      }
+      if (i < 0) {
+        i = images.length - 1;
+      }
+
+      caro.fadeOut("slow", function () {
+        var dup = caro.clone();
+        dup.attr("src", images[i]);
+
+        $(this).replaceWith(dup);
+        dup.show();
+      });
+    };
+    next.onclick = function () {
+      const caro = $("#caro");
+      var src = caro.attr("src");
+
+      var i = images.indexOf(src);
+      i++;
+      if (i >= images.length) {
+        i = 0;
+      }
+      if (i < 0) {
+        i = images.length - 1;
+      }
+
+      caro.fadeOut("slow", function () {
+        var dup = caro.clone();
+        dup.attr("src", images[i]);
+
+        $(this).replaceWith(dup);
+        dup.show();
+      });
+    };
+  }
+
+  var images2 = [
+    "https://gitjournal.io/screenshots/ios/2020-09-28/en-GB/iPhone Xs Max-5.png",
+    "https://gitjournal.io/screenshots/ios/2020-09-28/en-GB/iPhone Xs Max-4.png",
+    "https://gitjournal.io/screenshots/ios/2020-09-28/en-GB/iPhone Xs Max-6.png",
+    "https://gitjournal.io/screenshots/ios/2020-09-28/en-GB/iPhone Xs Max-7.png",
+    "https://gitjournal.io/screenshots/ios/2020-09-28/en-GB/iPhone Xs Max-21.png",
+  ];
 };
+
+function carosel(list, mainId, prevId, nextId) {}
