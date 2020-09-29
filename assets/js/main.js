@@ -116,4 +116,12 @@ function carosel(images, mainId, prevId, nextId) {
       dup.fadeIn("slow");
     });
   };
+
+  preload(images);
+}
+
+function preload(arrayOfImages) {
+  $(arrayOfImages).each(function () {
+    $("<img />").attr("src", this).appendTo("body").hide();
+  });
 }
