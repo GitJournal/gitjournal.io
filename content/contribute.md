@@ -10,6 +10,7 @@ You can help via -
 * [Voting on Existing Issues](https://github.com/GitJournal/GitJournal/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc)
 * [Reporting Bugs](https://github.com/GitJournal/GitJournal/issues/new)
 * [Donating via Paypal](https://paypal.me/visheshhanda)
+* [Donating as a GitHub Sponsors](https://github.com/sponsors/vHanda)
 * Purchasing the Pro Version
 
 Additionally, if GitJournal has been useful for you, please consider -
