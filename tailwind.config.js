@@ -29,7 +29,9 @@ module.exports = {
     },
     extend: {},
   },
-  variants: {},
+  variants: {
+    textColor: ["responsive", "hover", "focus", "group-hover"],
+  },
   important: "html", // For https://github.com/tailwindlabs/tailwindcss-typography/issues/32
   plugins: [
     require("@tailwindcss/typography"),
