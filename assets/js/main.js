@@ -87,12 +87,12 @@ function carosel(images, mainId, prevId, nextId) {
       i = images.length - 1;
     }
 
-    caro.fadeOut("slow", function () {
-      var dup = caro.clone();
-      dup.attr("src", images[i]);
+    var dup = caro.clone();
+    dup.attr("src", images[i]);
 
+    caro.fadeOut("fast", function () {
       $(this).replaceWith(dup);
-      dup.show();
+      dup.fadeIn("slow");
     });
   };
   next.onclick = function () {
@@ -108,12 +108,12 @@ function carosel(images, mainId, prevId, nextId) {
       i = images.length - 1;
     }
 
-    caro.fadeOut("slow", function () {
-      var dup = caro.clone();
-      dup.attr("src", images[i]);
+    var dup = caro.clone();
+    dup.attr("src", images[i]);
 
+    caro.fadeOut("fast", function () {
       $(this).replaceWith(dup);
-      dup.show();
+      dup.fadeIn("slow");
     });
   };
 }
