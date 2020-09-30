@@ -68,3 +68,7 @@ GitJournal does not store any of your notes. They are stored by your Git Host su
 Yes. GitJournal uses ssh, so any server accessible via ssh should be usable. If you're running your own server, perhaps you should think about [hardening it](https://www.sshaudit.com/hardening_guides.html).
 
 Also if you're using a non standard ssh port you will need to type the full url. Eg - `ssh://user@host.com:PORT/path/to/repo/journal.git`
+
+## What Markdown Syntax does GitJournal support
+
+GitJournal support GitHub Flavoured Markdown without the HTML. For more info please see [this.](https://www.markdownguide.org/tools/gitjournal/)
