@@ -24,6 +24,9 @@
 
   {{ if not .Site.IsServer }}
   <script async defer data-domain="gitjournal.io" src="https://plausible.gitjournal.io/js/index.js"></script>
+  <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+  {{ else }}
+  <script>window.plausible = function (ev) { console.log("Plausible Event:", ev); }</script>
   {{ end }}
 
   <script src="/js/jquery-3.4.1.min.js"></script>
