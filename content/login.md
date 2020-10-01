@@ -1,0 +1,4 @@
+---
+type: login
+title: Login
+---

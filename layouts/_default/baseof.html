@@ -38,6 +38,7 @@
 </head>
 
 <body class='{{ cond .Site.IsServer "debug-screens" "" }}'>
+  {{ block "body" . }}
   <div id="app" class="flex flex-col min-h-screen font-mono">
     {{ partial "header" . }}
 
@@ -62,6 +63,8 @@
   <script src="{{ $jsDevAll.Permalink }}"></script>
   {{ else }}
   <script src="{{ $jsProdAll.Permalink }}"></script>
+  {{ end }}
+
   {{ end }}
 </body>
 
