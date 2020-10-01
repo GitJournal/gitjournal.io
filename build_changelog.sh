@@ -15,6 +15,7 @@ for v in $VERSIONS; do
     rm -f "$OUTPUT_FILE"
 
     echo '---' >>"$OUTPUT_FILE"
+    echo "title: \"Version $v\"" >>"$OUTPUT_FILE"
     cat "$INPUT_FILE" | yj | jq ".[] | select(.version==\"$v\")" | yj -r >>"$OUTPUT_FILE"
     echo '---' >>"$OUTPUT_FILE"
 done

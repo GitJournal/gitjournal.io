@@ -1,5 +1,5 @@
 ---
-title: Privacy Policy
+title: Privacy
 subtitle: "Effective date: April 05, 2019"
 ---
 
