@@ -798,8 +798,8 @@ function foo() {
             tooltipModel.yPadding + "px " + tooltipModel.xPadding + "px";
           tooltipEl.style.pointerEvents = "none";
         },
-      },
       */
+      },
       hover: {
         mode: "index",
         intersect: true,
