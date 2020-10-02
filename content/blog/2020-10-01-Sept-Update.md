@@ -32,7 +32,7 @@ As you can see, I've reached **94.21%** of the revenue goal (**+120.34%**). This
 
 {{< revenue year="2020" month="08" >}}
 
-I did land up launching on [Hacker News](https://news.ycombinator.com/item?id=24627465) on the 29th of September, however it barely got any traction, which was disappointing. However, I'm still quite please that this forced me to build this website and now I can start some SEO and it will make promoting GitJournal easier.
+I did land up launching on [Hacker News](https://news.ycombinator.com/item?id=24627465) on the 29th of September, however it barely got any traction, which was disappointing. However, I'm still quite pleased that this forced me to build this website and now I can start some SEO and it will make promoting GitJournal easier.
 
 ### Usage Stats
 
@@ -40,7 +40,7 @@ I did land up launching on [Hacker News](https://news.ycombinator.com/item?id=24
 - **WAU:** 873 (**+4.42%**)
 - **MAU:** 2400 (**+4.34%**)
 
-Where an active user is defined as a user who uses the app for more than 10 seconds. These numbers are questionable as the statistics are anonymous and linked to a device. Reinstalling the app will count as a new user. This also makes measuring retention really difficult.
+Where an active user is defined as anyone who uses the app for more than 10 seconds. These numbers are questionable as the statistics are anonymous and linked to a device. Reinstalling the app will count as a new user. This also makes measuring retention really difficult.
 
 Additionally, I know many people who have switched off analytics.
 
