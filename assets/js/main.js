@@ -151,7 +151,6 @@ async function buildRevenueGraph(year, month) {
 
   var response = await fetch(`/data/revenue/${year}-${month}.json`);
   var data = await response.json();
-  console.log(data);
 
   var revenue = [];
   var sales = [];
@@ -165,20 +164,6 @@ async function buildRevenueGraph(year, month) {
     sales[i] = parseFloat(value.sales);
     monthly[i] = parseFloat(value.subscriptions);
     yearly[i] = parseFloat(value.iap) - parseFloat(value.subscriptions);
-
-    /*
-    var total = sales[i] + monthly[i] + yearly[i];
-    if (total.toFixed(2) != revenue[i].toFixed(2)) {
-      console.log(key);
-      console.log("Revenue: " + revenue[i]);
-      console.log("sales: " + sales[i]);
-      console.log("monthly: " + monthly[i]);
-      console.log("yearly: " + yearly[i]);
-      console.log("Total: ", sales[i] + monthly[i] + yearly[i]);
-      console.log(value);
-      console.log("-------");
-    }
-    */
   }
 
   for (var i = 1; i < revenue.length; i++) {
@@ -187,13 +172,11 @@ async function buildRevenueGraph(year, month) {
     monthly[i] += monthly[i - 1];
     yearly[i] += yearly[i - 1];
   }
-  revenue = revenue.map((r) => r.toFixed(2));
-  sales = sales.map((r) => r.toFixed(2));
-  monthly = monthly.map((r) => r.toFixed(2));
-  yearly = yearly.map((r) => r.toFixed(2));
 
   const date = new Date(year, month - 1, 1);
   const monthName = date.toLocaleString("default", { month: "long" });
+
+  var total = 0;
 
   new Chart(ctx, {
     type: "line",
@@ -202,16 +185,6 @@ async function buildRevenueGraph(year, month) {
       labels: labels,
       // Information about the dataset
       datasets: [
-        /*
-        {
-          label: "Revenue",
-          backgroundColor: "lightblue",
-          borderColor: "royalblue",
-          data: revenue,
-          fill: "origin",
-          pointRadius: 0,
-        },*/
-
         {
           label: "Monthly Subs",
           backgroundColor: "#d5d170",
@@ -250,89 +223,21 @@ async function buildRevenueGraph(year, month) {
       tooltips: {
         mode: "index",
         intersect: false,
-        /*
-        custom: function (tooltipModel) {
-          // Tooltip Element
-          var tooltipEl = document.getElementById("chartjs-tooltip");
-
-          // Create element on first render
-          if (!tooltipEl) {
-            tooltipEl = document.createElement("div");
-            tooltipEl.id = "chartjs-tooltip";
-            tooltipEl.innerHTML = "<table></table>";
-            document.body.appendChild(tooltipEl);
-          }
-
-          // Hide if no tooltip
-          if (tooltipModel.opacity === 0) {
-            tooltipEl.style.opacity = 0;
-            return;
-          }
-
-          // Set caret Position
-          tooltipEl.classList.remove("above", "below", "no-transform");
-          if (tooltipModel.yAlign) {
-            tooltipEl.classList.add(tooltipModel.yAlign);
-          } else {
-            tooltipEl.classList.add("no-transform");
-          }
-
-          function getBody(bodyItem) {
-            return bodyItem.lines;
-          }
-
-          // Set Text
-          if (tooltipModel.body) {
-            var titleLines = tooltipModel.title || [];
-            var bodyLines = tooltipModel.body.map(getBody);
-
-            var innerHtml = "<thead>";
-
-            titleLines.forEach(function (title) {
-              innerHtml += "<tr><th>" + title + "</th></tr>";
-            });
-            innerHtml += "</thead><tbody>";
-
-            var sum = 0;
-            bodyLines.forEach(function (body) {
-              var num = body[0].split(":")[1];
-              sum += parseFloat(num);
-            });
-            sum = "Total: " + sum.toFixed(2);
-
-            innerHtml += "<tr><td>" + sum + "</td></tr>";
-            bodyLines.forEach(function (body, i) {
-              var colors = tooltipModel.labelColors[i];
-              var style = "background:" + colors.backgroundColor;
-              style += "; border-color:" + colors.borderColor;
-              style += "; border-width: 2px";
-              var span = '<span style="' + style + '"></span>';
-              innerHtml += "<tr><td>" + span + body + "</td></tr>";
-            });
-            innerHtml += "</tbody>";
-
-            var tableRoot = tooltipEl.querySelector("table");
-            tableRoot.innerHTML = innerHtml;
-          }
-
-          // `this` will be the overall tooltip
-          var position = this._chart.canvas.getBoundingClientRect();
-
-          // Display, position, and set styles for font
-          tooltipEl.style.opacity = 1;
-          tooltipEl.style.position = "absolute";
-          tooltipEl.style.left =
-            position.left + window.pageXOffset + tooltipModel.caretX + "px";
-          tooltipEl.style.top =
-            position.top + window.pageYOffset + tooltipModel.caretY + "px";
-          tooltipEl.style.fontFamily = tooltipModel._bodyFontFamily;
-          tooltipEl.style.fontSize = tooltipModel.bodyFontSize + "px";
-          tooltipEl.style.fontStyle = tooltipModel._bodyFontStyle;
-          tooltipEl.style.padding =
-            tooltipModel.yPadding + "px " + tooltipModel.xPadding + "px";
-          tooltipEl.style.pointerEvents = "none";
+        callbacks: {
+          afterTitle: function () {
+            total = 0;
+          },
+          label: function (tooltipItem, data) {
+            var label = data.datasets[tooltipItem.datasetIndex].label;
+            var valor =
+              data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+            total += valor;
+            return label + ": " + valor.toFixed(2);
+          },
+          footer: function () {
+            return "Total: " + total.toFixed(2);
+          },
         },
-      */
       },
       hover: {
         mode: "index",
