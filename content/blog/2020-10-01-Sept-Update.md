@@ -2,7 +2,6 @@
 title: GitJournal September Update
 date: 2020-10-01
 cover: /images/blog/2020/10/sept_cover.jpeg
-preview: false
 ---
 
 Last month, after much deliberation **I've decided to start working on GitJournal full-time**, till at least the end of the year. Before this I had been doing a mix of consulting and GitJournal.
@@ -63,7 +62,7 @@ I'm still looking for other designers and trying to improve my own design skills
 1. **Revenue**: 750 €
 2. **Payment via Website:** This is crucial for releasing GitJournal on F-Droid and the Desktop. It should also increase the revenue as for some percentage of the users I will be able to avoid the 30% Google and Apple tax.
 
-I'm specifically not putting any product development goals as building and improving GitJournal comes naturally. I have a huge list of tasks I want to do, but — for me — its better to not set them on goals as I prefer to prioritize issues and features on a weekly basis based on what will increase the revenue, user feedback and [votes](https://github.com/GitJournal/GitJournal/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc).
+I'm specifically not putting any product development goals as building and improving GitJournal comes naturally. I have a huge list of tasks I want to do, but — for me — its better to not set them as goals as I prefer to prioritize issues and features on a weekly basis based on what will increase the revenue, user feedback and [votes](https://github.com/GitJournal/GitJournal/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc).
 
 Also by just having a revenue goal, I can decide how much I want to focus on  developing newer features to convert more users vs attracting more users.
 
