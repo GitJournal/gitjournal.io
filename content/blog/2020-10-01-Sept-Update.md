@@ -48,7 +48,7 @@ During this month I'll spend some time to create some public dashboards to show 
 
 ## Changes
 
-Most of my time this month was spent building the GitJournal website for the Hacker News launch. I've always been more of backend developer, and CSS is something I've always struggled with. However this time after using [Tailwind CSS](https://tailwindcss.com/), building the website was much easier.
+Most of my time this month was spent building the GitJournal website for the Hacker News launch. I've always been more of a backend developer, and CSS is something I've always struggled with. However this time after using [Tailwind CSS](https://tailwindcss.com/), building the website was much easier.
 
 It's the first time I've felt so comfortable building a website. This has resulted in almost doubling the number of unique views per day (Aug - 40 vs Sept - 70).
 
