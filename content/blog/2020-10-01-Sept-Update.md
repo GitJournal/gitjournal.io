@@ -30,7 +30,7 @@ For September my goals were to -
 
 {{< revenue year="2020" month="09" >}}
 
-As you can see, I've only reached **85%** of the revenue goal. This is still a good increase from last month, but I thought I would easily make it. I did land up launching on [Hacker News](https://news.ycombinator.com/item?id=24627465) on the 29th of September, however it barely got any traction, which was disappointing.
+As you can see, I've only reached **85%** of the revenue goal (How much % increase). This is still a good increase from last month, but I thought I would easily make it. I did land up launching on [Hacker News](https://news.ycombinator.com/item?id=24627465) on the 29th of September, however it barely got any traction, which was disappointing.
 
 {{< revenue year="2020" month="08" >}}
 
