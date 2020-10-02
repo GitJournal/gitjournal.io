@@ -232,10 +232,10 @@ async function buildRevenueGraph(year, month) {
             var valor =
               data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
             total += valor;
-            return label + ": " + valor.toFixed(2);
+            return label + ": " + valor.toFixed(2) + " €";
           },
           footer: function () {
-            return "Total: " + total.toFixed(2);
+            return "Total: " + total.toFixed(2) + " €";
           },
         },
       },
