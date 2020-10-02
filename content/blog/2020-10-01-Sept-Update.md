@@ -2,7 +2,6 @@
 title: GitJournal September Update
 date: 2020-10-01
 cover: /images/blog/2020/10/sept_cover.jpeg
-draft: true
 preview: false
 ---
 
@@ -29,11 +28,11 @@ For September my goals were to -
 
 ### Revenue
 
-{{< revenue >}}
+{{< revenue year="2020" month="09" >}}
 
 As you can see, I've only reached **85%** of the revenue goal. This is still a good increase from last month, but I thought I would easily make it. I did land up launching on [Hacker News](https://news.ycombinator.com/item?id=24627465) on the 29th of September, however it barely got any traction, which was disappointing.
 
-{{< revenue >}}
+{{< revenue year="2020" month="08" >}}
 
 ### Usage Stats
 

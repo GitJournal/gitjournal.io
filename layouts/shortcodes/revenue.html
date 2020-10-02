@@ -1,3 +1,6 @@
+{{ $month := .Get "month" }}
+{{ $year := .Get "year" }}
+
 <div class="chart" class="w-full relative">
-  <canvas id="myChart"></canvas>
+  <canvas id="revenue-{{ $year }}-{{ $month }}"></canvas>
 </div>

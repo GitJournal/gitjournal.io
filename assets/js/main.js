@@ -65,7 +65,9 @@ window.onload = function () {
   ];
   carosel(images2, "caro2", "caro-prev2", "caro-next2");
 
-  foo();
+  buildRevenueGraph("2020", "09");
+  buildRevenueGraph("2020", "08");
+  buildRevenueGraph("2020", "07");
 };
 
 function carosel(images, mainId, prevId, nextId) {
@@ -128,9 +130,12 @@ function preload(arrayOfImages) {
   });
 }
 
-function foo() {
-  console.log("FOOO");
-  var ctx = document.getElementById("myChart").getContext("2d");
+function buildRevenueGraph(year, month) {
+  var elem = document.getElementById("revenue-" + year + "-" + month);
+  if (elem == null) {
+    return;
+  }
+  var ctx = elem.getContext("2d");
   if (ctx == null) {
     return;
   }
