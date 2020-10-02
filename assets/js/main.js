@@ -710,6 +710,7 @@ function foo() {
 
     // Configuration options
     options: {
+      responsive: true,
       layout: {
         padding: 10,
       },
