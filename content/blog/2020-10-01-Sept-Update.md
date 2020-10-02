@@ -8,7 +8,7 @@ Last month, after much deliberation **I've decided to start working on GitJourna
 
 This is a scary big step to take. Getting paid from consulting is so much easier than a product. GitJournal's revenue is still far away from covering my monthly expenses, but I think I can get there by the end of the year.
 
-I've also taken another big decission - To be more open and transparent with all parts of GitJournal - especially the revenue and usage statistics.
+I've also taken another big decission - To be more open and transparent with all parts of GitJournal - especially the revenue and usage statistics. (Partly inspired by [Plausible](https://plausible.io))
 
 ![Sharing the stats](/images/blog/2020/10/sept_cover.jpeg)
 
