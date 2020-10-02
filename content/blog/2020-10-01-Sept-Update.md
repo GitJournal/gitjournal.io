@@ -2,6 +2,8 @@
 title: GitJournal September Update
 date: 2020-10-01
 cover: /images/blog/2020/10/sept_cover.jpeg
+draft: true
+preview: false
 ---
 
 Last month, after much deliberation **I've decided to start working on GitJournal full-time**, till at least the end of the year. Before this I had been doing a mix of consulting and GitJournal.

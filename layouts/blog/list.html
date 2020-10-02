@@ -9,6 +9,8 @@
     {{ range $pag.Pages }}
 
     {{ $imgUrl := .Params.cover }}
+    {{ $preview := .Params.preview | default true }}
+    {{ if $preview }}
 
     <div class="max-w-3xl w-full mx-auto lg:flex py-8">
       <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
@@ -33,6 +35,8 @@
         </div>
       </a>
     </div>
+
+    {{ end }}
 
 
     {{ end }}
