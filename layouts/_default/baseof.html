@@ -34,8 +34,8 @@
   <script>window.plausible = function (ev) { console.log("Plausible Event:", ev); }</script>
   {{ end }}
 
-  <script src="/js/jquery-3.4.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+  <script async defer src="/js/jquery-3.4.1.min.js"></script>
+  <script async defer src="/js/Chart-2.9.3.js"></script>
 </head>
 
 <body class='{{ cond .Site.IsServer "debug-screens" "" }}'>
