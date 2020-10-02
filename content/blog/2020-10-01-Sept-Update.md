@@ -65,6 +65,6 @@ I'm still looking for other designers and trying to improve my own design skills
 
 I'm specifically not putting any product development goals as building and improving GitJournal comes naturally. I have a huge list of tasks I want to do, but — for me — its better to not set them as goals as I prefer to prioritize issues and features on a weekly basis based on what will increase the revenue, user feedback and [votes](https://github.com/GitJournal/GitJournal/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc).
 
-Also by just having a revenue goal, I can decide how much I want to focus on  developing newer features to convert more users vs attracting more users.
+Also by just having a revenue goal, I can decide how much I want to focus on developing newer features to convert more users vs attracting more users.
 
 What do you think? What would you do differently?
