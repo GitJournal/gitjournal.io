@@ -28,7 +28,7 @@ For September my goals were to -
 
 {{< revenue year="2020" month="09" >}}
 
-As you can see, I've reached **94.2%** of the revenue goal (**+120.34%**). This is still a good increase from last month, but I thought I would easily reach my goal. Please note that only 30% of this is Monthly Recurring Revenue. And the Yearly Purchase does NOT automatically renew.
+As you can see, I've reached **94.21%** of the revenue goal (**+120.34%**). This is still a good increase from last month, but I thought I would easily reach my goal. Please note that only 30% of this is Monthly Recurring Revenue. And the Yearly Purchase does NOT automatically renew.
 
 {{< revenue year="2020" month="08" >}}
 
