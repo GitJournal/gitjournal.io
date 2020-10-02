@@ -217,6 +217,7 @@ async function buildRevenueGraph(year, month) {
     // Configuration options
     options: {
       responsive: true,
+      maintainAspectRatio: false,
       layout: {
         padding: 10,
       },
