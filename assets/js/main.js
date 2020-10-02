@@ -270,6 +270,12 @@ async function buildRevenueGraph(year, month) {
             gridLines: {
               drawOnChartArea: false,
             },
+            ticks: {
+              userCallback: function (item, index) {
+                if (!((index + 1) % 5)) return item + "th";
+              },
+              autoSkip: false,
+            },
           },
         ],
       },
