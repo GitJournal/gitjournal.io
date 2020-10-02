@@ -811,7 +811,7 @@ function foo() {
       },
       title: {
         display: true,
-        text: "Revenue",
+        text: "September 2020",
       },
       scales: {
         yAxes: [
@@ -829,10 +829,6 @@ function foo() {
         ],
         xAxes: [
           {
-            scaleLabel: {
-              display: true,
-              labelString: "September",
-            },
             gridLines: {
               drawOnChartArea: false,
             },

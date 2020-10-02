@@ -1,61 +1,67 @@
 ---
 title: GitJournal September Update
 date: 2020-10-01
+cover: /images/blog/2020/10/sept_cover.jpeg
 ---
 
 Last month, after much deliberation **I've decided to start working on GitJournal full-time**, till at least the end of the year. Before this I had been doing a mix of consulting and GitJournal.
 
 Why did I decide to take such a big step? GitJournal's usage numbers have gone up, as has its revenue. It's still far away from covering my monthly expenses, but I think I can get there by the end of the year.
 
-I've also taken another big decission - To be more open and transparent with the revenue and usage statistics. 
+I've also taken another big decission - To be more open and transparent with all parts of GitJournal - especially the revenue and usage statistics.
 
-GitJournal has always been completely open source. But I never felt comfortable sharing the buisness side of things - This is mostly because of fear of failure and judgement. Building a product from scratch is difficult. And hopefully, by sharing the real numbers, it'll lead to more transparency, self-motivation and maybe even motivate other indie hackers out there. 
+![Sharing the stats](/images/blog/2020/10/sept_cover.jpeg)
 
-The GitJournal Project is a big experiment - An experiment to try and build a consumer facing fully open source product which is sustainable.
+GitJournal has always been completely Open Source. But I've never felt comfortable sharing the buisness side of things - Some part of this is probably cultural, but I think it is mostly because of fear of failure and judgement. Just building a great product is not what will make GitJournal successfull. It's just one part of the puzzle, and maybe not even the most important one.
 
-So, lets get to it.
+I have experience building products as an engineer, but I'm far less experienced in all the other parts that go into a product. Hopefully, by sharing the real numbers, it'll lead to more transparency, self-motivation and maybe even inspire other [Indie Hackers](https://www.indiehackers.com/product/gitjournal) out there.
+
+GitJournal is a big experiment - An experiment to try and build a consumer facing fully [Open Source](https://github.com/GitJournal/GitJournal/blob/master/LICENSE) product which is sustainable.
+
+So, lets look at the numbers.
 
 For September my goals were to -
 
-1. Launch on Hacker News
-2. Reach 500€ in Revenue
+1. Reach 500€ in Revenue
+2. Launch on Hacker News
+
+### Revenue
 
 {{< revenue >}}
 
-[ Graph of usage numbers - MAU, WAU, DAU ]
+As you can see, I've only reached **85%** of the revenue goal. This is still a good increase from last month, but I thought I would easily make it. I did land up launching on [Hacker News](https://news.ycombinator.com/item?id=24627465) on the 29th of September, however it barely got any traction, which was disappointing.
 
-As you can see from the numbers, I only reached 85% of the revenue goal. This is still a good increase from last month, but my target goal was on lower side.
+{{< revenue >}}
 
-[ Graph of Revenue Figures for August ]
+### Usage Stats
 
-[ Graph of Usage numbers for August ]
+- Average DAU:
+- Average MAU:
+- Average WAU:
 
-Compared to the month of August, however this has resulted in an x% increase in Monthly Revenue and x% increase in MAU.
+Where an active user is defined as a user who uses the app for more than 10 seconds.
 
-For a product to succeed, it has to have 3 parts -
+During this month I'll spend some time to create some public dashboards to show the revenue and usage stats. Something similar to [Bare Metrics](https://baremetrics.com/open-startups) would be awesome. Please let me know if you have any reccomendations.
 
-1. Building something someone wants.
-2. A well built product.
-3. Getting the product in the hands of people who want it.
+## Changes
 
-I think that GitJournal is genuinely filling a big hole in the market, and based on the users feedback they seem to use it for 3 possible things -
+Most of my time this month was spent building the GitJournal website for the Hacker News launch. I've always been more of backend developer, and CSS is something I've always struggled with. However this time after using [Tailwind CSS](https://tailwindcss.com/), building the website was much easier.
 
-1. More Privacy Conscious Users storing their Notes
-2. Developers storing their notes
-3. New Age Note Taking Tools
-4. Website builders
+It's the first time I've felt so comfortable building a website. This has resulted in almost doubling the number of unique views per day (Aug - 40 vs Sept - 70).
 
+An open question is whether I should have spent these 80+ hours to build the website, instead of contracting it out. My biased opinion is that front-end development is as essential skill that I was lacking. Building this has resulted in my overall design skills improving as well. More about this in another blog post.
 
+Another big achievement for me was contracting out some graphic design work using Fiverr. I wanted to get into the habbit of delegating more tasks, instead of doing everything myself. And this was the first step.
 
-Goals for the month of October -
+I'm still looking for other designers and trying to improve my own design skills. If you have any suggestions, please let me know.
 
-- Revenue: 750 euros
-- Try to undrestand the retention problem
+## October Goals
 
-I have lots of features I want to implement in GitJournal, however, none of those are in my goal for this month - A scary part of starting something on your own is managing your feeling and figuring out how you work best - For me, the motivation to build GitJournal has not decreased over time. It's only gotten stronger. I know myself, and I hope to implement a number of features this month - Mutlti Git Repo Support, Theming, Graph View, and much much better Wiki Link Support.
+1. **Revenue**: 750 €
+2. **Payment via Website:** This is crucial for releasing GitJournal on F-Droid and the Desktop. It should also increase the revenue as for some % of the users I will be able to avoid the 30% Google and Apple tax.
 
+I'm specifically not putting any product development goals as building and improving GitJournal comes naturally. I have a huge list of tasks I want to do, but - for me - its better to not set them on goals as I prefer to prioritize issues and features on a weekly basis based on what will increase the revenue, user feedback and [votes](https://github.com/GitJournal/GitJournal/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc).
 
+Also by just having a revenue goal, I can decide how much I want to focus on  developing newer features to convert more users vs attracting more users.
 
-What did I manage to accomplish in September?
-
-- A website built on TailWindCSS - Talk about why this has helped. And how this was both a good and bad decission. - This can go into a completely separate blog post.
+What do you think? What would you do differently?
