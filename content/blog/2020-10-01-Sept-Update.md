@@ -9,13 +9,13 @@ Last month, after much deliberation **I've decided to start working on GitJourna
 
 This is a scary big step to take. Getting paid from consulting is so much easier than a product. GitJournal's revenue is still far away from covering my monthly expenses, but I think I can get there by the end of the year.
 
-I've also taken another big decission - To be more open and transparent with all parts of GitJournal - especially the revenue and usage statistics. (Partly inspired by [Plausible](https://plausible.io))
+I've also taken another big decision - To be more open and transparent with all parts of GitJournal - especially the revenue and usage statistics. (Partly inspired by [Plausible](https://plausible.io))
 
 ![Sharing the stats](/images/blog/2020/10/sept_cover.jpeg)
 
-GitJournal has always been completely Open Source. But I've never felt comfortable sharing the buisness side of things - Some part of this is probably cultural, but I think it is mostly because of fear of failure and judgement. Just my engineering skills are not what will make GitJournal successfull. It's just one part of the puzzle, and probably not even the most important one.
+GitJournal has always been completely Open Source. But I've never felt comfortable sharing the business side of things - Some part of this is probably cultural, but I think it is mostly because of fear of failure and judgement. Just my engineering skills are not what will make GitJournal successful. It's just one part of the puzzle, and probably not even the most important one.
 
-Hopefully, by sharing the real numbers, it'll lead to more transparency, self-motivation and maybe even inspire other [Indie Hackers](https://www.indiehackers.com/product/gitjournal) out there. Launching your own product is difficult. And GitJournal is a certainly an outlier as it's both completely [Open Source](https://github.com/GitJournal/GitJournal/blob/master/LICENSE) and it's mainly targetting individuals (B2C) and not buisnesses.
+Hopefully, by sharing the real numbers, it'll lead to more transparency, self-motivation and maybe even inspire other [Indie Hackers](https://www.indiehackers.com/product/gitjournal) out there. Launching your own product is difficult. And GitJournal is a certainly an outlier as it's both completely [Open Source](https://github.com/GitJournal/GitJournal/blob/master/LICENSE) and it's mainly targeting individuals (B2C) and not businesses.
 
 Alright, let's look at the numbers.
 
@@ -44,7 +44,7 @@ Where an active user is defined as a user who uses the app for more than 10 seco
 
 Additionally, I know many people who have switched off analytics.
 
-During this month I'll spend some time to create some public dashboards to show the revenue and usage stats. Something similar to [Bare Metrics](https://baremetrics.com/open-startups) would be awesome. Please let me know if you have any reccomendations.
+During this month I'll spend some time to create some public dashboards to show the revenue and usage stats. Something similar to [Bare Metrics](https://baremetrics.com/open-startups) would be awesome. Please let me know if you have any recommendations.
 
 ## Changes
 
