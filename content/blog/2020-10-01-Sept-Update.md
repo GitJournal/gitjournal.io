@@ -3,26 +3,26 @@ title: GitJournal September Update
 date: 2020-10-01
 ---
 
-Last month, after much deliberation I decided to start working on GitJournal full-time, till at least the end of the year. Before this I had been doing a mix of consulting and GitJournal.
+Last month, after much deliberation **I've decided to start working on GitJournal full-time**, till at least the end of the year. Before this I had been doing a mix of consulting and GitJournal.
 
 Why did I decide to take such a big step? GitJournal's usage numbers have gone up, as has its revenue. It's still far away from covering my monthly expenses, but I think I can get there by the end of the year.
 
-I've also taken another big decission - GitJournal has always been completely open source. But I never felt comfortable sharing the usage numbers and revenue - I think this is mostly because of fear of failure and judgement. Building a product from scratch is difficult. And hopefully, by sharing the real numbers, it'll lead to more transparency, self-motivation and maybe even motivate other indie hackers out there. The GitJournal Project is a big experiment - An experiment to try and build a consumer facing fully open source product which is sustainable.
+I've also taken another big decission - To be more open and transparent with the revenue and usage statistics. 
 
-Why Open Source? Because the transparency which an open source project gives you one of the only ways to guarentee privacy.
+GitJournal has always been completely open source. But I never felt comfortable sharing the buisness side of things - This is mostly because of fear of failure and judgement. Building a product from scratch is difficult. And hopefully, by sharing the real numbers, it'll lead to more transparency, self-motivation and maybe even motivate other indie hackers out there. 
 
-So, lets get to it -
+The GitJournal Project is a big experiment - An experiment to try and build a consumer facing fully open source product which is sustainable.
 
-{{< revenue >}}
-
-[ Graph of the Revenue figures ]
-
-[ Graph of usage numbers - MAU, WAU, DAU ]
+So, lets get to it.
 
 For September my goals were to -
 
-1. Launch the updated buisness model
+1. Launch on Hacker News
 2. Reach 500€ in Revenue
+
+{{< revenue >}}
+
+[ Graph of usage numbers - MAU, WAU, DAU ]
 
 As you can see from the numbers, I only reached 85% of the revenue goal. This is still a good increase from last month, but my target goal was on lower side.
 
