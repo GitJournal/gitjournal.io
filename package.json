@@ -13,6 +13,7 @@
     "tailwindcss": "^1.8.5"
   },
   "devDependencies": {
+    "tailwind-heropatterns": "0.0.8",
     "tailwindcss-debug-screens": "^1.1.0"
   }
 }

@@ -36,6 +36,16 @@ module.exports = {
   plugins: [
     require("@tailwindcss/typography"),
     require("tailwindcss-debug-screens"),
+    require("tailwind-heropatterns")({
+      variants: [],
+      patterns: ["circuit-board"],
+      colors: {
+        default: "#9C92AC",
+      },
+      opacity: {
+        default: "0.04",
+      },
+    }),
   ],
   future: {
     removeDeprecatedGapUtilities: true,
