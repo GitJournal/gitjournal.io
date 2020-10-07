@@ -2,7 +2,7 @@
 
 
 
-<div class="min-w-screen min-h-screen bg-gray-200 flex items-center justify-center px-5 py-5">
+<div class="min-w-screen bg-gray-200 flex items-center justify-center px-5 py-5">
   <div class="w-full max-w-3xl">
     <h1 id="email" class="text-3xl">USER NAME </h1>
   </div>
@@ -52,6 +52,48 @@
       </div>
     </div>
   </div>
+</div>
+
+{{/*  Show your available votes  */}}
+
+<div class="flex flex-col">
+  <div class="py-12">
+    <h1 class="text-3xl text-center">Issues</h1>
+  </div>
+
+  <div class="flex flex-col justify-center px-2 py-1 border-gray-200 border-t-2 border-b-2">
+    <div class="flex flex-row items-center hover:bg-gray-200 justify-between">
+      <h1 class="font-semibold text-lg">Desktop App</h1>
+      <div class="shadow rounded-lg bg-green-300 flex flex-row items-center px-2 py-1">
+        <span class="font-bold px-1">16</span>
+        <svg class="text-current h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+      </div>
+    </div>
+    <div>
+      #137 opened on 14 May
+    </div>
+  </div>
+
+
+  <div class="flex flex-col justify-center px-2 py-1 border-gray-200 border-b-2">
+    <div class="flex flex-row items-center hover:bg-gray-200 justify-between">
+      <h1 class="font-semibold text-lg">Web Version</h1>
+      <div class="shadow rounded-lg bg-green-300 flex flex-row items-center px-2 py-1">
+        <span class="font-bold px-1">12</span>
+        <svg class="text-current h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+      </div>
+    </div>
+    <div>
+      #45 opened on 14 Dec 2019
+    </div>
+  </div>
+
+  {{/*  Link to GitHub issue  */}}
+  {{/*  Allow you to vote on it  */}}
 </div>
 
 
