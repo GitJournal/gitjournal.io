@@ -7,16 +7,22 @@
         Sign in to your account
       </h2>
     </div>
-    <form class="mt-8" action="#" method="POST">
+    <div id="form-error" class="hidden pt-4">
+      <div class="inline-flex items-center bg-white leading-none text-red-600 rounded-lg p-2 shadow text-teal text-sm">
+        <span class="inline-flex bg-red-600 text-white rounded-lg h-6 px-3 justify-center items-center">Error</span>
+        <span class="inline-flex px-2" id="form-error-text"></span>
+      </div>
+    </div>
+    <form class="mt-8" onsubmit="login(); return false">
       <input type="hidden" name="remember" value="true">
       <div class="rounded-md shadow-sm">
         <div>
-          <input aria-label="Email address" name="email" type="email" required
+          <input aria-label="Email address" id="email" type="email" required
             class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:shadow-outline-green focus:border-green-300 focus:z-10 sm:text-sm sm:leading-5"
             placeholder="Email address">
         </div>
         <div class="-mt-px">
-          <input aria-label="Password" name="password" type="password" required
+          <input aria-label="Password" id="password" type="password" required
             class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:shadow-outline-green focus:border-green-300 focus:z-10 sm:text-sm sm:leading-5"
             placeholder="Password">
         </div>
@@ -56,5 +62,35 @@
     </form>
   </div>
 </div>
+
+<script>
+  window.addEventListener("load", () => {
+  });
+
+  function login() {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var remember_me = document.getElementById("remember_me").checked;
+
+    var auth = new GoTrue({
+      APIUrl: 'http://localhost:9999',
+      audience: '',
+      setCookie: true,
+    });
+
+    auth.login(email, password, remember_me)
+      .then((response) => {
+        console.log('Success! Response: ' + JSON.stringify({ response }));
+      })
+      .catch((error) => showError(error.json.error_description));
+  }
+
+  function showError(message) {
+    $("#form-error").removeClass('hidden');
+    $("#form-error-text").text(message);
+  }
+
+
+</script>
 
 {{ end }}
