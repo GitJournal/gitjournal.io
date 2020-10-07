@@ -53,7 +53,7 @@
     {{ partial "footer" . }}
   </div>
 
-
+  {{ end }}
 
   {{/*  Js information */}}
   {{ $vueDev := resources.Get "js/vue.js" }}
@@ -65,8 +65,6 @@
   <script src="{{ $jsDevAll.Permalink }}"></script>
   {{ else }}
   <script src="{{ $jsProdAll.Permalink }}"></script>
-  {{ end }}
-
   {{ end }}
 </body>
 

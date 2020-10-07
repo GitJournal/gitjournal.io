@@ -8,6 +8,20 @@ var app = new Vue({
       failReason: "Pokemon are not alive",
       success: false,
     },
+    issues: {
+      list: [
+        {
+          num: 137,
+          title: "Desktop App",
+          votes: 16,
+        },
+        {
+          num: 45,
+          title: "Web Version",
+          votes: 12,
+        },
+      ],
+    },
   },
 });
 
