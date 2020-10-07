@@ -64,13 +64,12 @@
 </div>
 
 <script>
-  window.addEventListener("load", () => {
-  });
-
   function login() {
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
     var remember_me = document.getElementById("remember_me").checked;
+
+    // FIXME: What about the remember_me?
 
     var auth = new GoTrue({
       APIUrl: 'http://localhost:9999',
@@ -78,9 +77,10 @@
       setCookie: true,
     });
 
-    auth.login(email, password, remember_me)
+    auth.login(email, password, true)
       .then((response) => {
         console.log('Success! Response: ' + JSON.stringify({ response }));
+        window.location.href = '/account';
       })
       .catch((error) => showError(error.json.error_description));
   }
@@ -89,8 +89,6 @@
     $("#form-error").removeClass('hidden');
     $("#form-error-text").text(message);
   }
-
-
 </script>
 
 {{ end }}
