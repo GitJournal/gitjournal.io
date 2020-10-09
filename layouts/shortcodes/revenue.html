@@ -4,3 +4,160 @@
 <div class="chart" class="w-full relative" style="height: 300px">
   <canvas id="revenue-{{ $year }}-{{ $month }}"></canvas>
 </div>
+
+<script>
+
+  function daysInMonth(year, month) {
+    return new Date(year, month, 0).getDate();
+  }
+
+  async function buildRevenueGraph(year, month) {
+    var elem = document.getElementById(`revenue-${year}-${month}`);
+    if (elem == null) {
+      return;
+    }
+    var ctx = elem.getContext("2d");
+    if (ctx == null) {
+      return;
+    }
+
+    var labels = [];
+    for (var i = 1; i <= daysInMonth(year, month); i++) {
+      labels[i - 1] = i;
+    }
+
+    var response = await fetch(`/data/revenue/${year}-${month}.json`);
+    var data = await response.json();
+
+    var revenue = [];
+    var sales = [];
+    var monthly = [];
+    var yearly = [];
+
+    for (var i = 0; i < data.length; i++) {
+      var value = data[i];
+
+      revenue[i] = parseFloat(value.total);
+      sales[i] = parseFloat(value.sales);
+      monthly[i] = parseFloat(value.subscriptions);
+      yearly[i] = parseFloat(value.iap) - parseFloat(value.subscriptions);
+    }
+
+    for (var i = 1; i < revenue.length; i++) {
+      revenue[i] += revenue[i - 1];
+      sales[i] += sales[i - 1];
+      monthly[i] += monthly[i - 1];
+      yearly[i] += yearly[i - 1];
+    }
+
+    const date = new Date(year, month - 1, 1);
+    const monthName = date.toLocaleString("default", { month: "long" });
+
+    var total = 0;
+
+    new Chart(ctx, {
+      type: "line",
+      // The data for our dataset
+      data: {
+        labels: labels,
+        // Information about the dataset
+        datasets: [
+          {
+            label: "Monthly Subs",
+            backgroundColor: "#1dab13",
+            //borderColor: "#aab952",
+            data: monthly,
+            pointRadius: 0,
+          },
+          {
+            label: "iOS Sales",
+            backgroundColor: "#87cb74",
+            //borderColor: "#528124",
+            fill: "origin",
+            data: sales,
+            pointRadius: 0,
+          },
+          {
+            label: "Yearly Purchase",
+            backgroundColor: "#d1eac7",
+            //borderColor: "#104908",
+            data: yearly,
+            pointRadius: 0,
+          },
+          // #528124
+          // #2D6514
+          // #104908
+          // #012D04
+        ],
+      },
+
+      // Configuration options
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        layout: {
+          padding: 10,
+        },
+        tooltips: {
+          mode: "index",
+          intersect: false,
+          callbacks: {
+            afterTitle: function () {
+              total = 0;
+            },
+            label: function (tooltipItem, data) {
+              var label = data.datasets[tooltipItem.datasetIndex].label;
+              var valor =
+                data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+              total += valor;
+              return label + ": " + valor.toFixed(2) + " €";
+            },
+            footer: function () {
+              return "Total: " + total.toFixed(2) + " €";
+            },
+          },
+        },
+        hover: {
+          mode: "index",
+          intersect: true,
+        },
+        legend: {
+          display: true,
+          position: "bottom",
+        },
+        title: {
+          display: true,
+          text: `${monthName} ${year}`,
+        },
+        scales: {
+          yAxes: [
+            {
+              stacked: true,
+              scaleLabel: {
+                display: false,
+              },
+              ticks: {
+                callback: function (value) {
+                  return value + " €";
+                },
+              },
+            },
+          ],
+          xAxes: [
+            {
+              gridLines: {
+                drawOnChartArea: false,
+              },
+              ticks: {
+                userCallback: function (item, index) {
+                  if (!((index + 1) % 5)) return item + "th";
+                },
+                autoSkip: false,
+              },
+            },
+          ],
+        },
+      },
+    });
+  }
+</script>
