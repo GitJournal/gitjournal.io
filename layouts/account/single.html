@@ -99,7 +99,11 @@
 
     var user = await auth.currentUser();
     if (user == null) {
-      return;
+      var qp = parseUrlHashParameters();
+      user = await auth.createUser(qp);
+      if (user == null) {
+        return;
+      }
     }
     console.log("Got User: ", user);
 
@@ -107,6 +111,17 @@
 
     chartShit();
   });
+
+  function parseUrlHashParameters() {
+    var hash = window.location.hash.substr(1);
+
+    var result = hash.split('&').reduce(function (result, item) {
+      var parts = item.split('=');
+      result[parts[0]] = parts[1];
+      return result;
+    }, {});
+    return result;
+  }
 
   function chartShit() {
     const chartOptions = {
