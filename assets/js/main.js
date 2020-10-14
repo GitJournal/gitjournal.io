@@ -79,9 +79,6 @@ window.onload = function () {
   ];
   carosel(images2, "caro2", "caro-prev2", "caro-next2");
 
-  buildRevenueGraph("2020", "09");
-  buildRevenueGraph("2020", "08");
-  buildRevenueGraph("2020", "07");
 };
 
 function carosel(images, mainId, prevId, nextId) {

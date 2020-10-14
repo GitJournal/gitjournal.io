@@ -6,7 +6,6 @@
 </div>
 
 <script>
-
   function daysInMonth(year, month) {
     return new Date(year, month, 0).getDate();
   }
@@ -160,4 +159,10 @@
       },
     });
   }
+
+  window.addEventListener('load', () => {
+    buildRevenueGraph("2020", "09");
+    buildRevenueGraph("2020", "08");
+    buildRevenueGraph("2020", "07");
+  });
 </script>
