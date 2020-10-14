@@ -8,9 +8,10 @@ At this point you might be wondering - How is this different than DropBox or Goo
 
 * Git isn't controlled by one organization
 * Git is an open protocol supported by many companies
-* Git has unlimited file versions
+* Git has a inbuilt concept of time which results in unlimited file versions
 * Git is decentralized
 * Git is tamper proof (elaborate?)
+* Git stores files in a normal folder
 
 The beauty of Git is that since it is a standard, you don't need to trust DropBox or Google with your data. You can pick who you want to trust with your files. Here are some of the popular providers of Git -
 
