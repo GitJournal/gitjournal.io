@@ -2,6 +2,7 @@
 title: GitJournal October Update
 date: 2020-11-05
 cover: /images/blog/2020/11/oct_cover.jpeg
+reddit: https://www.reddit.com/r/GitJournal/comments/joo50c/gitjournal_october_update/
 ---
 
 Wow, it's been a crazy month. October just flew by. I've barely managed to make progress on so many parts. I overall feel like October has been far too messy.
