@@ -19,7 +19,7 @@ Here are the numbers -
 
 {{< revenue year="2020" month="10" >}}
 
-I reached **687.42**€ and with an extra 11€ as donations makes it about **700**€. I might have made it to 750€, but I've lost a good 80€ to a payment bug in the code, which I still haven't managed to fix.
+I reached **687.42**€ and with an extra **11€** as donations makes it about **700**€ (**↑48%**). I might have made it to 750€, but I've lost a good 80€ to a payment bug in the code, which I still haven't managed to fix.
 
 Sadly the second goal of the enabling payments via the website still hasn't been finished. I've now mostly figured out the backend architecture of GitJournal and I'll be rolling out the concept of a "**GitJournal Account**" early next week.
 
