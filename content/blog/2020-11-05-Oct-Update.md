@@ -5,7 +5,7 @@ cover: /images/blog/2020/11/oct_cover.jpeg
 reddit: https://www.reddit.com/r/GitJournal/comments/joo50c/gitjournal_october_update/
 ---
 
-Wow, it's been a crazy month. October just flew by. I've barely managed to make progress on so many parts. I overall feel like October has been far too messy.
+Wow, it's been a crazy month. October just flew by. I've barely managed to make progress on so many parts. I overall feel like October has been far too messy, I'm still figuring out the path forward, and I'll share more details soon.
 
 For October my goals were -
 
@@ -19,7 +19,7 @@ Here are the numbers -
 
 {{< revenue year="2020" month="10" >}}
 
-I reached 687.42€ and with an extra 11€ as donations makes it about 700€. I might have made it to 750€, but I've lost a good 80€ to a payment bug in my code, which I still haven't managed to fix. Sadly the second goal of the enabling payments via the website still hasn't been finished.
+I reached 687.42€ and with an extra 11€ as donations makes it about 700€. I might have made it to 750€, but I've lost a good 80€ to a payment bug in the code, which I still haven't managed to fix. Sadly the second goal of the enabling payments via the website still hasn't been finished.
 
 Even though I reached fairly close to my goal, I feel as though this month has been quite bad. Progress has been quite slow this month (health issues), but at the same time I'm thrilled that GitJournal is growing even in a less productive month. This has led to me introspect on how GitJournal as a project is being managed, specifically how I manage my time and energy and decide which tasks to do.
 
