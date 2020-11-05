@@ -23,19 +23,21 @@ I reached 687.42€ and with an extra 11€ as donations makes it about 700€. 
 
 Sadly the second goal of the enabling payments via the website still hasn't been finished. I've now mostly figured out the backend architecture of GitJournal and I'll be rolling out the concept of a "**GitJournal Account**" early next week.
 
+![Devices](/images/blog/2020/11/devices.jpg)
+
 The main benefit is that you'll only need to pay once, instead of having to purchase it separately on Android / iOS / Desktop (soon).
 
 Even though I reached fairly close to my revenue goal, I feel as though this month has been quite bad. Progress has been quite slow this month (health issues), but at the same time I'm thrilled that GitJournal is growing even in a less productive month. This has led to me introspect on how GitJournal as a project is being managed, specifically how I manage my time and energy and decide which tasks to do.
 
-![Task Planning](/images/blog/2020/11/oct_cover.jpeg)
+Most teams operate in sprints. You plan out tasks for a few weeks and then you execute them. This doesn't always work for me. Depending on how my energy levels are that day and how motivated I'm feeling I find it easier to do some tasks vs other. I broadly divide these tasks based on three different factors - **Creativity**, **Unknowns** and **Experience**.
 
-Most teams operate in sprints. You plan out tasks for a few weeks and then you execute them. This doesn't always work for me. Depending on how my energy levels are that day and how motivated I'm feeling I find it easier to do some tasks vs other. I broadly divide these tasks based on three different factors - Creativity, Unknowns and Experience.
+![Task Planning](/images/blog/2020/11/oct_cover.jpeg)
 
 Tasks where little creativity is required, a few unknowns, and in my area of expertise are the easiest. Depending on my energy level and mood I can make myself do other kind of tasks, but this month has been a low energy month and I've mostly gravitated towards these low-energy tasks.
 
 These changes are mostly related to one under the hood effort that has already being going on for weeks which is having [native Git support](https://github.com/GitJournal/dart_git). Once I finish this you can expect faster development (more features coming out), the application will be snappier and it will mark a before and after for the stability of GitJournal
 
-Other important tasks like documentation, marketing, and customer support have fallen through the cracks.
+Other important tasks like Documentation, Marketing, and Customer Support have fallen through the cracks.
 
 ### November Goals
 
