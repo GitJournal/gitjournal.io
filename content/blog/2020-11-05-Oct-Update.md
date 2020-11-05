@@ -27,7 +27,7 @@ The main benefit is that you'll only need to pay once, instead of having to purc
 
 ![Devices](/images/blog/2020/11/devices.jpg)
 
-Even though I reached fairly close to my revenue goal, I feel as though this month has been quite bad. Progress has been quite slow this month (health issues), but at the same time I'm thrilled that GitJournal is growing even in a less productive month. This has led to me introspect on how GitJournal as a project is being managed, specifically how I manage my time and energy and decide which tasks to do.
+Even though I reached fairly close to my revenue goal, I feel as though this month has been quite bad. Progress has been quite slow (health issues), but at the same time I'm thrilled about the revenue growth in a less productive month. This has led to me introspect on how GitJournal as a project is being managed, specifically how I manage my time and energy and decide which tasks to do.
 
 Most teams operate in sprints. You plan out tasks for a few weeks and then you execute them. This doesn't always work for me. Depending on how my energy levels are that day and how motivated I'm feeling I find it easier to do some tasks vs other. I broadly divide these tasks based on three different factors - **Creativity**, **Unknowns** and **Experience**.
 
