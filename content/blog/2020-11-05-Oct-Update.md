@@ -19,13 +19,13 @@ Here are the numbers -
 
 {{< revenue year="2020" month="10" >}}
 
-I reached 687.42€ and with an extra 11€ as donations makes it about 700€. I might have made it to 750€, but I've lost a good 80€ to a payment bug in the code, which I still haven't managed to fix.
+I reached **687.42**€ and with an extra 11€ as donations makes it about **700**€. I might have made it to 750€, but I've lost a good 80€ to a payment bug in the code, which I still haven't managed to fix.
 
 Sadly the second goal of the enabling payments via the website still hasn't been finished. I've now mostly figured out the backend architecture of GitJournal and I'll be rolling out the concept of a "**GitJournal Account**" early next week.
 
-![Devices](/images/blog/2020/11/devices.jpg)
-
 The main benefit is that you'll only need to pay once, instead of having to purchase it separately on Android / iOS / Desktop (soon).
+
+![Devices](/images/blog/2020/11/devices.jpg)
 
 Even though I reached fairly close to my revenue goal, I feel as though this month has been quite bad. Progress has been quite slow this month (health issues), but at the same time I'm thrilled that GitJournal is growing even in a less productive month. This has led to me introspect on how GitJournal as a project is being managed, specifically how I manage my time and energy and decide which tasks to do.
 
