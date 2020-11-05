@@ -23,7 +23,7 @@
             <div class="text-black font-bold text-xl mb-2">
               {{ .Title }}
             </div>
-            <p class="text-grey-darker text-base"> {{slicestr .Summary 0 200}} ... </p>
+            <p class="text-grey-darker text-base"> {{slicestr .Summary 0 200 | htmlUnescape }} ... </p>
           </div>
           <div class="flex items-center">
             <img class="w-10 h-10 rounded-full mr-4" src="/images/vhanda.jpeg" alt="Avatar of Vishesh Handa">
