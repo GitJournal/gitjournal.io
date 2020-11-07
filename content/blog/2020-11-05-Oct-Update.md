@@ -35,7 +35,7 @@ Most teams operate in sprints. You plan out tasks for a few weeks and then you e
 
 Tasks where little creativity is required, a few unknowns, and in my area of expertise are the easiest. Depending on my energy level and mood I can make myself do other kind of tasks, but this month has been a low energy month and I've mostly gravitated towards these low-energy tasks.
 
-These changes are mostly related to one under the hood effort that has already being going on for weeks which is having [native Git support](https://github.com/GitJournal/dart_git). Once I finish this you can expect faster development (more features coming out), the application will be snappier and it will mark a before and after for the stability of GitJournal
+These changes are mostly related to one under the hood effort that has already being going on for weeks which is having [native Git support](https://github.com/GitJournal/dart-git). Once I finish this you can expect faster development (more features coming out), the application will be snappier and it will mark a before and after for the stability of GitJournal
 
 Other important tasks like Documentation, Marketing, and Customer Support have fallen through the cracks.
 
