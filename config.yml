@@ -32,7 +32,7 @@ params:
         - title: Privacy
           Permalink: /privacy
         - title: Roadmap
-          Permalink: https://github.com/GitJournal/GitJournal/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc
+          Permalink: https://github.com/GitJournal/GitJournal/milestones
     # Add Changelog
     # Add Screenshots
     - title: Social
