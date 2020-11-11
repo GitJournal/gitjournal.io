@@ -60,3 +60,5 @@ params:
         #  Permalink: / -> Requires someone to put me on Slant
         - title: Stack us on YourStack
           Permalink: https://yourstack.com/products/gitjournal
+        - title: Reviews
+          Permalink: /reviews
