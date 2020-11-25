@@ -59,11 +59,11 @@
   {{ end }}
 
   {{/*  Js information */}}
-  {{ $vueDev := resources.Get "js/vue.js" }}
-  {{ $vueProd := resources.Get "js/vue.min.js" }}
+  {{ $alpineDev := resources.Get "js/alpine.js" }}
+  {{ $alpineProd := resources.Get "js/alpine.min.js" }}
   {{ $js := resources.Get "js/main.js" }}
-  {{ $jsDevAll := slice $vueDev $js | resources.Concat "js/main-dev.js" | minify }}
-  {{ $jsProdAll := slice $vueProd $js | resources.Concat "js/main.js" | minify }}
+  {{ $jsDevAll := slice $alpineDev $js | resources.Concat "js/main-dev.js" | minify }}
+  {{ $jsProdAll := slice $alpineProd $js | resources.Concat "js/main.js" | minify }}
   {{ if .Site.IsServer }}
   <script src="{{ $jsDevAll.Permalink }}"></script>
   {{ else }}

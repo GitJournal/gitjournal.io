@@ -9,37 +9,88 @@
 {{ $subtitle = .subtitle }}
 {{ end }}
 
-<div v-if="!newsletter.success && !newsletter.fail" class="bg-white shadow-lg rounded px-4 py-6">
+<div x-data="getNewsletter()" @submit.prevent="submitNewsletter();">
+  <template x-if="!newsletter.success && !newsletter.fail" class="bg-white shadow-lg rounded px-4 py-6">
+    <div>
+      <div class="text-lg font-bold">{{ $title }}</div>
+      <div class="text-sm mt-2">{{ $subtitle }}</div>
 
-  <div class="text-lg font-bold">{{ $title }}</div>
-  <div class="text-sm mt-2">{{ $subtitle }}</div>
+      <form class="flex flex-wrap md:flex-no-wrap my-4">
+        <input
+          class="appearance-none border rounded py-2 px-3 my-2 w-full md:w-1/3 md:mr-2 leading-tight focus:outline-none focus:shadow-outline"
+          x-model="newsletter.name" type="text" placeholder="First Name">
+        <input
+          class="appearance-none border rounded py-2 px-3 my-2 w-full md:w-2/3 md:flex md:mr-2 leading-tight focus:outline-none focus:shadow-outline"
+          x-model="newsletter.email" type="email" placeholder="Email">
 
-  <form id='gj-newsletter' class="flex flex-wrap md:flex-no-wrap my-4">
-    <input
-      class="appearance-none border rounded py-2 px-3 my-2 w-full md:w-1/3 md:mr-2 leading-tight focus:outline-none focus:shadow-outline"
-      name="name" id='gj-name' type="text" placeholder="First Name">
-    <input
-      class="appearance-none border rounded py-2 px-3 my-2 w-full md:w-2/3 md:flex md:mr-2 leading-tight focus:outline-none focus:shadow-outline"
-      name="email" id='gj-email' type="email" placeholder="Email">
+        <button
+          class="bg-green-500 hover:bg-green-700 w-full my-2 md:w-auto md:flex-auto text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline"
+          type="submit">
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </template>
 
-    <button
-      class="bg-green-500 hover:bg-green-700 w-full my-2 md:w-auto md:flex-auto text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline"
-      type="submit">
-      Subscribe
-    </button>
-  </form>
+  <template x-if="newsletter.success" class="px-4 py-6">
+    <div>
+      <div class="text-lg font-bold">Thank you</div>
+      <div class="text-sm mt-2">You have been sent a confirmation email.</div>
+    </div>
+  </template>
+
+
+  <template x-if="newsletter.fail" class="px-4 py-6">
+    <div>
+      <div class="text-lg font-bold">Failed</div>
+      <div class="text-sm mt-2">
+        <span x-text="failReason"></span>
+      </div>
+    </div>
+  </template>
+
 </div>
 
+<script>
+  function getNewsletter() {
+    return {
+      newsletter: {
+        fail: false,
+        failReason: "Pokemon are not alive",
+        success: false,
+        name: '',
+        email: '',
+      },
 
-<div v-if="newsletter.success" class="px-4 py-6">
-  <div class="text-lg font-bold">Thank you</div>
-  <div class="text-sm mt-2">You have been sent a confirmation email.</div>
-</div>
+      submitNewsletter: function () {
+        const XHR = new XMLHttpRequest();
+        var n = this.newsletter;
+        const name = n.name;
+        const email = n.email;
 
+        XHR.addEventListener("load", function () {
+          if (XHR.status == 200) {
+            n.success = true;
+          } else {
+            n.fail = true;
+            n.failReason = XHR.responseText;
+          }
+        });
+        XHR.addEventListener("error", function () {
+          n.fail = true;
+          n.failReason = "Unknown Error";
+        });
 
-<div v-if="newsletter.fail" class="px-4 py-6">
-  <div class="text-lg font-bold">Failed</div>
-  <div class="text-sm mt-2">
-    << newsletter.failReason>>
-  </div>
-</div>
+        XHR.open(
+          "POST",
+          "https://us-central1-gitjournal-io.cloudfunctions.net/NewsletterAdd"
+        );
+        XHR.setRequestHeader("Content-Type", "application/json");
+        XHR.send(JSON.stringify({ name2: name, email2: email }));
+
+        // We do not want the form to change
+        return false;
+      }
+    };
+  }
+</script>

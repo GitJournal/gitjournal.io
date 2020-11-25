@@ -13,8 +13,8 @@
 
 {{ $latestChangeLog := (index (where .Site.Pages "Params.version" $latestVersion) 0) }}
 
-<header class="container mx-auto sm:flex sm:justify-between sm:max-w-3xl xl:max-w-5xl mb-16">
-  <div class="flex items-center justify-between px-4 py-2" :class="isOpen ? 'shadow-sm' : 'shadow-none'">
+<header class="container mx-auto sm:flex sm:justify-between sm:max-w-3xl xl:max-w-5xl mb-16" x-data="{ menuBarOpen: false }">
+  <div class="flex items-center justify-between px-4 py-2" :class="menuBarOpen ? 'shadow-sm' : 'shadow-none'">
     <div class="flex flex-row items-center">
       <a href="/">
         <img class="h-8" src="/images/logos/icon-logo.svg" alt="GitJournal" />
@@ -23,18 +23,23 @@
         frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>
     </div>
     <div class="sm:hidden">
-      <button @click="isOpen = !isOpen" type="button"
+      <button @click="menuBarOpen = !menuBarOpen" type="button"
         class="text-gray-800 hover:text-green-400 focus:text-green-900 focus:outline-none">
-        <svg v-if="!isOpen" class="h-8 w-8 fill-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-        <svg v-if="isOpen" class="h-8 w-8 fill-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
+        <template x-if="!menuBarOpen">
+          <svg class="h-8 w-8 fill-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </template>
+        <template x-if="menuBarOpen">
+          <svg class="h-8 w-8 fill-current" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </template>
       </button>
     </div>
   </div>
-  <div :class="isOpen ? 'block' : 'hidden'" class="px-1 py-3 pb-3 shadow-lg font-normal rounded sm:flex sm:shadow-none">
+  <div :class="{ 'block' : menuBarOpen ,'hidden' : !menuBarOpen }"
+    class="px-1 py-3 pb-3 shadow-lg font-normal rounded sm:flex sm:shadow-none">
     {{ range $navbar }}
     {{ $permalink := .Permalink }}
     {{ if (eq .title "Changelog")}}
