@@ -28,7 +28,7 @@ I see developing GitJournal split into roughly 3 parts -
 
 1. **Product Development** - This includes design, coding, testing and documentation.
 2. **Customer Development** - This includes talking to the users as support and on whatever medium (HackerNews, Twitter) in order to understand them and accordingly drive Product Development.
-3. **Marketting** - The main goal is to promote GitJournal is various channels - Website, SEO, ASO, Twitter, HackerNews - in order for more people to learn about GitJournal and hopefully get converted into paying users.
+3. **Marketing** - The main goal is to promote GitJournal is various channels - Website, SEO, ASO, Twitter, HackerNews - in order for more people to learn about GitJournal and hopefully get converted into paying users.
 
 This is a lot to juggle as one person. The coding part of **Product Development** comes to me naturally, but there are still these other parts where I need to concentrate in order for GitJournal to be sustainable. These parts require more motivation, learning and pushing myself into new areas and newer ways of thinking.
 
