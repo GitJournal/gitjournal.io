@@ -36,11 +36,11 @@ However, I need to slow down.
 
 ![Slow Down](/images/blog/2020/12/ralph-ravi-kayden-aECGWofxVkw-unsplash.jpg)
 
-Over the last month, [a chronic condition](https://en.wikipedia.org/wiki/Multiple_sclerosis) I suffer from has flared up, and has sadly affected my hands. I now need to take frequent breaks between sessions of using the keyboard. I'm hoping this will heal, but in the meantime, I need to adapt.
+Over the last month, [a chronic condition](https://en.wikipedia.org/wiki/Multiple_sclerosis) I've had for a long time has flared up, and has sadly affected my hands. I now need to take frequent breaks between sessions of using the keyboard. I'm hoping this will heal, but in the meantime, I need to adapt.
 
 I'm going to slow down and prioritize my health. This effectively means for December (and maybe even January), I'm going to focus less on Marketing and Customer Development, and focus on the parts that give me the most joy - mostly building GitJournal as a product.
 
-I've started experimenting with voice coding solutions, foot pedals, and teaching my left hand to use the mouse, in order to be able to code longer. It's an exhausting journey, but fortunately - as a programmer - I'm able to configure my tools and environment quite a bit. This might even result in improving GitJournal's accessibility!
+I've started experimenting with (and building) voice coding solutions, foot pedals, and teaching my left hand to use the mouse, in order to be able to code longer. It's an exhausting journey, but fortunately - as a programmer - I'm able to configure my tools and environment quite a bit. This might even result in improving GitJournal's accessibility!
 
 So, no goals for December. Let me just get accustomed to this new stage of my life.
 
