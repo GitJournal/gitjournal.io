@@ -40,7 +40,7 @@ Over the last month, [a chronic condition](https://en.wikipedia.org/wiki/Multipl
 
 I'm going to slow down and prioritize my health. This effectively means for December (and maybe even January), I'm going to focus less on Marketing and Customer Development, and focus on the parts that give me the most joy - mostly building GitJournal as a product.
 
-I've started experimenting with voice coding solutions, foot pedals, and teaching my left hand to use the mouse, in order to be able to code longer. It's an exhausting journey, but fortunately - as a programmer - I'm able to configure my tools and environment quite a bit.
+I've started experimenting with voice coding solutions, foot pedals, and teaching my left hand to use the mouse, in order to be able to code longer. It's an exhausting journey, but fortunately - as a programmer - I'm able to configure my tools and environment quite a bit. This might even result in improving GitJournal's accessibility!
 
 So, no goals for December. Let me just get accustomed to this new stage of my life.
 
