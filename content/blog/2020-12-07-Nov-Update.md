@@ -2,7 +2,6 @@
 title: GitJournal November Update
 date: 2020-12-07
 cover: /images/blog/2020/12/ralph-ravi-kayden-aECGWofxVkw-unsplash.jpg
-draft: true
 ---
 
 The last month has been a month full of Ios bug fixes, some task management and a few breaks (More on this below).
@@ -31,7 +30,7 @@ I see developing GitJournal split into roughly 3 parts -
 2. **Customer Development** - This includes talking to the users as support and on whatever medium (HackerNews, Twitter) in order to understand them and accordingly drive Product Development.
 3. **Marketting** - The main goal is to promote GitJournal is various channels - Website, SEO, ASO, Twitter, HackerNews - in order for more people to learn about GitJournal and hopefully get converted into paying users.
 
-This is a lot to juggle as one person. The coding part of **Product Development** comes to me naturally, but there are still these other parts where I need to concentrate in order for GitJournal to be sustainable. These parts require more motivation, learning and pushing myself into new areas and newer ways of thinking. 
+This is a lot to juggle as one person. The coding part of **Product Development** comes to me naturally, but there are still these other parts where I need to concentrate in order for GitJournal to be sustainable. These parts require more motivation, learning and pushing myself into new areas and newer ways of thinking.
 
 However, I need to slow down.
 
