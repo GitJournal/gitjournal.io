@@ -44,4 +44,4 @@ I've started experimenting with (and building) voice coding solutions, foot peda
 
 So, no goals for December. Let me just get accustomed to this new stage of my life.
 
-![Next Stage](/images/blog/2020/12/andrew-neel-cckf4TsHAuw-unsplash.jpg)
+![My Desk](/images/blog/2020/12/my_desk.jpg)
