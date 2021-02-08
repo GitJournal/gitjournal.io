@@ -65,7 +65,7 @@ GitJournal does not store any of your notes. They are stored by your Git Host su
 
 ## Can I use GitJournal with my own server?
 
-Yes. GitJournal uses ssh, so any server accessible via ssh should be usable. If you're running your own server, perhaps you should think about [hardening it](https://www.sshaudit.com/hardening_guides.html).
+Yes. GitJournal uses ssh, so any server accessible via ssh should be usable.
 
 Also if you're using a non standard ssh port you will need to type the full url. Eg - `ssh://user@host.com:PORT/path/to/repo/journal.git`
 
