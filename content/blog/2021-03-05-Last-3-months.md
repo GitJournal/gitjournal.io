@@ -2,6 +2,10 @@
 title: The Last 3 Months
 date: 2021-03-05
 cover: /images/blog/2021/03/white-jigsaw.jpeg
+_build:
+  render: true
+  publishResources: false
+  list: false
 ---
 
 Revenue took a bit of a dip in December and recovered in January and is now growing. This is partly because of the [Apple Small Business Program](https://developer.apple.com/app-store/small-business-program/), which reduces the commission paid to them from 30% to 15%. I hope Google provides something simliar as half of the revenue comes from Android.
