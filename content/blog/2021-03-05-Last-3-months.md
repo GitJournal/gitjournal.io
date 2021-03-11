@@ -1,7 +1,7 @@
 ---
 title: The Last 3 Months
 date: 2021-03-05
-cover: /images/blog/2021/03/white-jigsaw.jpeg
+cover: /images/blog/2021/03/courtney-corlew--EnI0H6Wm6s-unsplash.jpg
 _build:
   render: true
   publishResources: false
@@ -30,15 +30,16 @@ There is also a [Discord Server](https://discord.gg/abBwyEK) where I share daily
 
 Every couple of hours spent on marketing has a clear impact on revenue. I'm going to try at the minimum build a better icon and improve its [app](https://apps.apple.com/app/gitjournal/id1466519634) [pages](https://play.google.com/store/apps/details?id=io.gitjournal.gitjournal&pcampaignid=website). A significant portion of new users come from searches in the app stores.
 
-## What Niche?
+### Support
 
-My original plan for GitJournal was just a place to store my daily journal entries. I'd planned to create a separate app (maybe called GitNotes?) for most of my other note taking. However, GitJournal just kept growing and people started using it in all sort of ways which I had not expected (managing static websites).
+I've beel slowly going through the entire backlog, and hopefully I can soon adopt a system similar to Inbox Zero. Earlier, I would quite often try to fix the bug as I read the emails. Now I'm wearing a different hat while handling support and my priority is to triage bugs and pass them to the developer (me), who will then decide the priority.
 
-![Nice](/images/blog/2021/03/white-jigsaw.jpeg)
+### Focus
 
+The surprising side effect of it being harder to type, is that I'm now far pickier with the tasks I do. Earlier, I would get distracted far easily with other things - such as trying to build an open source version of 'x' or 'y', or a better voting system for GitJournal's issues, etc.
 
-Over the last year, with the explosion of Roam Research, Obsidian and other linked Note taking tools, the entire note taking space has been overturned. The difference between Journaling and Note Taking is now far fuzzier as different parts of them link to one another. Digital notes aren't like notes in a notebook.
+![Hands](/images/blog/2021/03/courtney-corlew--EnI0H6Wm6s-unsplash.jpg)
 
-GitJournal, as it currently exists, fits into this space as the mobile and tablet companion to the existing desktop apps. At some point, I might try and release a desktop and web-version, but for now it might be better to focus on the unique value provided by GitJournal.
+Now when I'm selecting tasks, I'm far more aware of my limits and ask myself "Will a user see the direct impact of this task?". My guess is that this with a far reduced scope every month is going to be good for GitJournal.
 
-Of course, none of this is set in stone.
+What do you think?
