@@ -1,0 +1,173 @@
+{{ $month0 := .Get "month0" }}
+{{ $year0 := .Get "year0" }}
+
+
+<div class="chart" class="w-full relative" style="height: 340px">
+  <canvas id="revenue-bar-{{ $year0 }}-{{ $month0 }}"></canvas>
+</div>
+
+<script>
+  function totalStats(data) {
+    var revenue = 0;
+    var sales = 0;
+    var monthly = 0;
+    var yearly = 0;
+
+    for (var i = 0; i < data.length; i++) {
+      var value = data[i];
+
+      revenue += parseFloat(value.total);
+      sales += parseFloat(value.sales);
+      monthly += parseFloat(value.subscriptions);
+      yearly += parseFloat(value.iap) - parseFloat(value.subscriptions);
+    }
+
+    return {
+      revenue: revenue,
+      sales: sales,
+      monthly: monthly,
+      yearly: yearly,
+    };
+  }
+
+  async function buildRevenueBarGraph(year0, month0, year1, month1, year2, month2, year3, month3) {
+    var elem = document.getElementById(`revenue-bar-${year0}-${month0}`);
+    if (elem == null) {
+      return;
+    }
+    var ctx = elem.getContext("2d");
+    if (ctx == null) {
+      return;
+    }
+
+    var labels = [
+      "Nov",
+      "Dec",
+      "Jan",
+      "Feb",
+    ];
+
+    // FIXME: Optimize this?
+    var response = await fetch(`/data/revenue/${year0}-${month0}.json`);
+    var data0 = await response.json();
+    var stats0 = totalStats(data0);
+
+    var response = await fetch(`/data/revenue/${year1}-${month1}.json`);
+    var data1 = await response.json();
+    var stats1 = totalStats(data1);
+
+    var response = await fetch(`/data/revenue/${year2}-${month2}.json`);
+    var data2 = await response.json();
+    var stats2 = totalStats(data2);
+
+    var response = await fetch(`/data/revenue/${year3}-${month3}.json`);
+    var data3 = await response.json();
+    var stats3 = totalStats(data3);
+
+    //const date = new Date(year, month - 1, 1);
+    //const monthName = date.toLocaleString("default", { month: "short" });
+
+    new Chart(ctx, {
+      type: "bar",
+      data: {
+        labels: labels,
+        datasets: [
+          {
+            label: "Monthly",
+            backgroundColor: "#1dab13",
+            data: [stats0.monthly, stats1.monthly, stats2.monthly, stats3.monthly],
+          },
+          {
+            label: "Yearly",
+            backgroundColor: "#87cb74",
+            data: [stats0.yearly, stats1.yearly, stats2.yearly, stats3.yearly],
+          },
+          {
+            label: "iOS Sales",
+            backgroundColor: "#d1eac7",
+            data: [stats0.sales, stats1.sales, stats2.sales, stats3.sales],
+          },
+          // #528124
+          // #2D6514
+          // #104908
+          // #012D04
+        ],
+      },
+
+      // Configuration options
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        layout: {
+          padding: 10,
+        },
+        tooltips: {
+          mode: "index",
+          intersect: false,
+          callbacks: {
+            afterTitle: function () {
+              total = 0;
+            },
+            label: function (tooltipItem, data) {
+              var label = data.datasets[tooltipItem.datasetIndex].label;
+              var valor =
+                data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+              total += valor;
+              return label + ": " + valor.toFixed(2) + " €";
+            },
+            footer: function () {
+              return "Total: " + total.toFixed(2) + " €";
+            },
+          },
+        },
+        hover: {
+          mode: "index",
+          intersect: true,
+        },
+        legend: {
+          display: true,
+          position: "bottom",
+        },
+        title: {
+          display: true,
+          text: `Revenue`,
+        },
+        scales: {
+          yAxes: [
+            {
+              stacked: true,
+              /*
+              scaleLabel: {
+                display: false,
+              },
+              ticks: {
+                callback: function (value) {
+                  return value + " €";
+                },
+              },*/
+            },
+          ],
+          xAxes: [
+            {
+              stacked: true,
+              /*
+              gridLines: {
+                drawOnChartArea: false,
+              },
+              ticks: {
+                userCallback: function (item, index) {
+                  if (!((index + 1) % 5)) return item + "th";
+                },
+                autoSkip: false,
+              },*/
+            },
+          ],
+        },
+      },
+    });
+  }
+
+  window.addEventListener('load', () => {
+    buildRevenueBarGraph("2020", "11", "2020", "12", "2021", "01", "2021", "02");
+  });
+</script>

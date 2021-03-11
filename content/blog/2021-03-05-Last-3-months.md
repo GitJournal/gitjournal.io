@@ -10,13 +10,7 @@ _build:
 
 Revenue took a bit of a dip in December and recovered in January and is now growing. This is partly because of the [Apple Small Business Program](https://developer.apple.com/app-store/small-business-program/), which reduces the commission paid to them from 30% to 15%. I hope Google provides something simliar as half of the revenue comes from Android.
 
-{{< revenue year="2020" month="11" >}}
-
-{{< revenue year="2020" month="12" >}}
-
-{{< revenue year="2021" month="01" >}}
-
-{{< revenue year="2021" month="02" >}}
+{{< revenue_bar year0="2020" month0="11" >}}
 
 The slow growth is understandable as there was almost no development or marketing effort in December or January. I was taking a break to heal after an injury. In Feb, I've been back to about 30% of my normal speed. I'm not sure when I'll be able to go back to pre-December levels, but it's nice to be slowly getting better.
 
