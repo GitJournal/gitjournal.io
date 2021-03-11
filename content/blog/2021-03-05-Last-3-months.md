@@ -32,7 +32,7 @@ I've beel slowly going through the entire backlog, and hopefully I can soon adop
 
 ### Focus
 
-The surprising side effect of it being harder to type, is that I'm now far pickier with the tasks I do. Earlier, I would get distracted far easily with other things - such as trying to build an open source version of 'x' or 'y', or a better voting system for GitJournal's issues, etc.
+The surprising side effect of it being harder to type, is that I'm now far pickier with the tasks I do. Earlier, I would get easily distracted with other tasks - such as trying to build an open source version of 'x' or 'y', or a better voting system for GitJournal's issues, etc.
 
 ![Hands](/images/blog/2021/03/courtney-corlew--EnI0H6Wm6s-unsplash.jpg)
 
