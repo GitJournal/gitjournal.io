@@ -4,7 +4,7 @@ date: 2021-03-05
 cover: /images/blog/2021/03/courtney-corlew--EnI0H6Wm6s-unsplash.jpg
 ---
 
-Revenue took a bit of a dip in December and recovered in January and is now growing. This is partly because of the [Apple Small Business Program](https://developer.apple.com/app-store/small-business-program/), which reduces the commission paid to them from 30% to 15%. I hope Google provides something simliar as half of the revenue comes from Android.
+Revenue took a bit of a dip in December and recovered in January and is now growing. This is partly because of the [Apple Small Business Program](https://developer.apple.com/app-store/small-business-program/), which reduces the commission paid to them from 30% to 15%. I hope Google provides something similar as half of the revenue comes from Android.
 
 {{< revenue_bar year0="2020" month0="11" >}}
 
@@ -28,7 +28,7 @@ Every couple of hours spent on marketing has a clear impact on revenue. I'm goin
 
 ### Support
 
-I've beel slowly going through the entire backlog, and hopefully I can soon adopt a system similar to Inbox Zero. Earlier, I would quite often try to fix the bug as I read the emails. Now I'm wearing a different hat while handling support and my priority is to triage bugs and pass them to the developer (me), who will then decide the priority.
+I've been slowly going through the entire backlog, and hopefully I can soon use a system similar to Inbox Zero. Earlier, I would quite often try to fix the bug as I read the emails. Now I'm wearing a different hat while handling support and my priority is to triage bugs and pass them to the developer (me), who will then decide the priority.
 
 ### Focus
 
