@@ -37,6 +37,6 @@ The surprising side effect of it being harder to type, is that I'm now far picki
 
 ![Hands](/images/blog/2021/03/courtney-corlew--EnI0H6Wm6s-unsplash.jpg)
 
-Now when I'm selecting tasks, I'm far more aware of my limits and ask myself "Will a user see the direct impact of this task?". My guess is that this with a far reduced scope every month is going to be good for GitJournal.
+Now when I'm selecting tasks, I'm far more aware of my limits and ask myself "Will a user see the direct impact of this task?". My guess is that this product focus and a far reduced scope every month is going to be good for GitJournal.
 
 What do you think?
