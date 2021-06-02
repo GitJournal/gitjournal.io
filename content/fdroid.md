@@ -2,4 +2,4 @@
 title: FDroid
 ---
 
-FDroid Repo!
+FDroid Repo: https://gitjournal.io/fdroid/repo
