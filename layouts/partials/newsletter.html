@@ -86,7 +86,7 @@
           "https://us-central1-gitjournal-io.cloudfunctions.net/NewsletterAdd"
         );
         XHR.setRequestHeader("Content-Type", "application/json");
-        XHR.send(JSON.stringify({ name2: name, email2: email }));
+        XHR.send(JSON.stringify({ name: name, email: email }));
 
         // We do not want the form to change
         return false;
