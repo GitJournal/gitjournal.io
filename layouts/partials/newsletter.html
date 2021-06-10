@@ -9,6 +9,16 @@
 {{ $subtitle = .subtitle }}
 {{ end }}
 
+{{ define "head" }}
+<meta name="twitter:card" content="summary_large_image"><!-- required -->
+<meta name="twitter:site" content="@GitJournalApp"><!-- required -->
+<meta name="twitter:creator" content="@visheshhanda"><!-- optional -->
+<meta name="twitter:title" content="Want product news and updates?"><!-- required -->
+<meta name="twitter:description" content="Subscribe to the GitJournal newsletter. Roughly one email a month."><!-- optional -->
+<meta name="twitter:image" content="/images/main_hero.png"><!-- optional -->
+<meta name="twitter:image:alt" content="GitJournal App Image">
+{{ end }}
+
 <div x-data="getNewsletter()" @submit.prevent="submitNewsletter();">
   <template x-if="!newsletter.success && !newsletter.fail" class="bg-white shadow-lg rounded px-4 py-6">
     <div>
