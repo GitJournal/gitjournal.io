@@ -4,10 +4,10 @@ title: Infrastructure
 
 Backend Infrastructure -
 * Google Cloud Platform
-* Digital Ocean
+* Supabase
 
 Analytics -
-* App: Firebase Analytics
+* App: Custom
 * Website: Plausible.io
 
 Crashes and Error Handling -
