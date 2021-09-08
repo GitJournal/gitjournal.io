@@ -11,7 +11,7 @@ If you request information or technical support, your personal data (such as you
 
 ### Information gathering and usage
 
-GitJournal also collects aggregated, anonymous user data regarding app usage. The user data we collect is used to improve GitJournal and the quality of our service. This may include the device's Internet Protocol (IP) address, locale preferences, identification numbers associated with your devices, your mobile carrier, date and time stamps, system configuration information, and other interactions with the application. We try not to collect any advertising IDs.
+GitJournal also collects aggregated, anonymous user data regarding app usage. The user data we collect is used to improve GitJournal and the quality of our service. This may include the device's locale preferences, non-unique identification numbers associated with your devices, your mobile carrier, date and time stamps, system configuration information, and other interactions with the application. We do not to collect any advertising IDs.
 
 ### Your data
 
@@ -25,10 +25,9 @@ We don't like it, and therefore do not show any ads. Nor do we ever plan to.
 
 We use the following 3rd party services to enhance GitJournal -
 
-- Firebase Analytics.
-- Sentry
+- Sentry for crash reporting
 
-These both can be opted-out in the Settings of GitJournal.
+They can can be opted-out in the Settings of GitJournal.
 
 ### Policy changes
 
