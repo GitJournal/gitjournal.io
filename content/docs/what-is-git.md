@@ -4,7 +4,7 @@ title: What is Git?
 
 Git can be thought of as a virtual pen drive. Just like with a normal pendrive you can store files in it. However, it comes with a few awesome capabilities. Since it is a virtual pen drive, it can be easily duplicated.
 
-At this point you might be wondering - How is this different than DropBox or Google Drive? It's quite similar - both DropBox and Git can be used to store files. The main difference is -
+At this point you might be wondering - How is this different than Dropbox or Google Drive? It's quite similar - both Dropbox and Git can be used to store files. The main difference is -
 
 * Git isn't controlled by one organization
 * Git is an open protocol supported by many companies
@@ -13,7 +13,7 @@ At this point you might be wondering - How is this different than DropBox or Goo
 * Git is tamper proof (elaborate?)
 * Git stores files in a normal folder
 
-The beauty of Git is that since it is a standard, you don't need to trust DropBox or Google with your data. You can pick who you want to trust with your files. Here are some of the popular providers of Git -
+The beauty of Git is that since it is a standard, you don't need to trust Dropbox or Google with your data. You can pick who you want to trust with your files. Here are some of the popular providers of Git -
 
 * GitHub
 * GitLab
@@ -58,6 +58,7 @@ Plain text Markdown also gives you the unparalleled interoperability to use any 
 
 ------
 
+```
 - https://techcrunch.com/2016/12/14/evernotes-new-privacy-policy-allows-employees-to-read-your-notes/
 - https://www.theverge.com/2020/2/4/21122044/google-photos-privacy-breach-takeout-data-video-strangers
 - https://www.forbes.com/sites/thomasbrewster/2020/02/04/google-photos-makes-big-screw-up-and-mayve-leaked-your-videos-to-a-random-stranger/#24eb8f055486
@@ -72,3 +73,4 @@ Shutdown -
 - https://www.theverge.com/2014/5/22/5741602/one-time-evernote-pinterest-rival-springpad-to-close-its-doors
 - https://gadgets.ndtv.com/apps/news/microsoft-to-do-new-features-wunderlist-shuts-down-2224833
 - https://www.theverge.com/2012/3/12/2865638/twitter-acquires-posterous-blogging-platform
+```
