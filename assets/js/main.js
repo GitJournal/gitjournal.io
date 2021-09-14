@@ -18,6 +18,9 @@ window.onload = function () {
   ];
   carosel(images2, "caro2", "caro-prev2", "caro-next2");
 
+  Sentry.init({
+    dsn: "https://e7de932a291e411e9958d1f85841d237@o366485.ingest.sentry.io/5958863",
+  });
 };
 
 function carosel(images, mainId, prevId, nextId) {
