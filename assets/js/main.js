@@ -21,8 +21,6 @@ window.onload = function () {
   Sentry.init({
     dsn: "https://e7de932a291e411e9958d1f85841d237@o366485.ingest.sentry.io/5958863",
   });
-  console.log("Sentry Initialized");
-  myUndefinedFunction();
 };
 
 function carosel(images, mainId, prevId, nextId) {
