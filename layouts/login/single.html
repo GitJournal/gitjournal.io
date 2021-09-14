@@ -61,7 +61,8 @@
       </div>
 
 
-      <div class="mt-2">
+      <!-- 
+        <div class="mt-2">
         <button
           class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:border-green-700 focus:shadow-outline-green active:bg-green-700 transition duration-150 ease-in-out"
           onclick="loginGitLab();" formnovalidate>
@@ -106,15 +107,13 @@
           Sign in with GitHub
         </button>
       </div>
+      -->
     </form>
   </div>
 </div>
 
 <script>
-  const API_URL = 'http://localhost:9999';
-  const login_success_page = '/account';
-
-  function login() {
+  async function login() {
     var email = document.getElementById("email").value;
     if (email == "") {
       // hack because login gets called when clicking on any other button as well
@@ -125,18 +124,15 @@
 
     // FIXME: What about the remember_me?
 
-    var auth = new GoTrue({
-      APIUrl: API_URL,
-      audience: '',
-      setCookie: true,
-    });
-
-    auth.login(email, password, true)
-      .then((response) => {
-        console.log('Success! Response: ' + JSON.stringify({ response }));
-        window.location.href = login_success_page;
-      })
-      .catch((error) => showError(error.json.error_description));
+    const sup = supabase.createClient('https://kokulrmhlfxdwuvcmblj.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzMTM3NDY4OSwiZXhwIjoxOTQ2OTUwNjg5fQ.LvaFM84Q00RKkRTyIDjzZAnkzba30bnRhQZQldj1AfU');
+    const { user, session, error } = await sup.auth.signIn({  email: email,  password: password,});
+    if (error != null) {
+      showError(error.message);
+    } else {
+      console.log('Success! User: ' + JSON.stringify({ user }));
+      console.log('Success! Session: ' + JSON.stringify({ session }));
+      window.location.href = '/account';
+    }
   }
 
   function showError(message) {

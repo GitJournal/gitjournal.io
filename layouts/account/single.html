@@ -91,19 +91,12 @@
 
 <script>
   window.addEventListener("load", async () => {
-    var auth = new GoTrue({
-      APIUrl: 'http://localhost:9999',
-      audience: '',
-      setCookie: true,
-    });
-
-    var user = await auth.currentUser();
+    const sup = supabase.createClient('https://kokulrmhlfxdwuvcmblj.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzMTM3NDY4OSwiZXhwIjoxOTQ2OTUwNjg5fQ.LvaFM84Q00RKkRTyIDjzZAnkzba30bnRhQZQldj1AfU');
+    const user = await sup.auth.user();
+    console.log(user);
+    
     if (user == null) {
-      var qp = parseUrlHashParameters();
-      user = await auth.createUser(qp);
-      if (user == null) {
-        return;
-      }
+      return;
     }
     console.log("Got User: ", user);
 
