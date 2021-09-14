@@ -48,6 +48,9 @@ Git is mature technology that has existed since 2005, it's used by thousands of 
 Since 'Git' was designed to store programming code, the world around Git has a lot of jargon for programmers and as a non-technical user many of the steps seem more cumbersome.
 
 
+
+{{/*
+
 ------ Obsidian's Text -----
 
 In our age when cloud services can shut down, get bought, or change privacy policy any day, the last thing you want is proprietary formats and data lock-in.
@@ -56,9 +59,7 @@ With Obsidian, your data sits in a local folder. Never leave your life's work he
 
 Plain text Markdown also gives you the unparalleled interoperability to use any kind of sync, encryption, or data processing that works with plain text files.
 
-------
-
-```
+------ 
 - https://techcrunch.com/2016/12/14/evernotes-new-privacy-policy-allows-employees-to-read-your-notes/
 - https://www.theverge.com/2020/2/4/21122044/google-photos-privacy-breach-takeout-data-video-strangers
 - https://www.forbes.com/sites/thomasbrewster/2020/02/04/google-photos-makes-big-screw-up-and-mayve-leaked-your-videos-to-a-random-stranger/#24eb8f055486
@@ -73,4 +74,7 @@ Shutdown -
 - https://www.theverge.com/2014/5/22/5741602/one-time-evernote-pinterest-rival-springpad-to-close-its-doors
 - https://gadgets.ndtv.com/apps/news/microsoft-to-do-new-features-wunderlist-shuts-down-2224833
 - https://www.theverge.com/2012/3/12/2865638/twitter-acquires-posterous-blogging-platform
-```
+
+/*}}
+
+
