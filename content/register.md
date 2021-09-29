@@ -1,0 +1,4 @@
+---
+type: register
+title: Register
+---
