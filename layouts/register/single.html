@@ -106,7 +106,7 @@
     const sup = supabase.createClient('https://kokulrmhlfxdwuvcmblj.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzMTM3NDY4OSwiZXhwIjoxOTQ2OTUwNjg5fQ.LvaFM84Q00RKkRTyIDjzZAnkzba30bnRhQZQldj1AfU');
     const redirectTo = window.location.protocol + '//' + window.location.host + '/account';
     console.log('RedirectTo: ' + redirectTo)
-    const { user, session, error } = await sup.auth.signUp({  email: email,  password: password, options: { redirectTo: redirectTo }});
+    const { user, session, error } = await sup.auth.signUp({  email: email,  password: password, }, { redirectTo: redirectTo });
     if (error != null) {
       showError(error.message);
     } else {
