@@ -1,0 +1,99 @@
+- name: Headings
+  link: https://markdownguide.org/basic-syntax#headings
+  value: true
+
+- name: Paragraphs
+  link: https://markdownguide.org/basic-syntax/#paragraphs-1
+  value: true
+
+- name: Line Breaks
+  link: https://markdownguide.org/basic-syntax/#line-breaks
+  value: true
+
+- name: Bold
+  link: https://markdownguide.org/basic-syntax#bold
+  value: true
+
+- name: Italic
+  link: https://markdownguide.org/basic-syntax#italic
+  value: true
+
+- name: Blockquotes
+  link: https://markdownguide.org/basic-syntax#blockquotes-1
+  value: true
+
+- name: Ordered Lists
+  link: https://markdownguide.org/basic-syntax#ordered-lists
+  value: true
+
+- name: Unordered Lists
+  link: https://markdownguide.org/basic-syntax#unordered-lists
+  value: true
+
+- name: Code
+  link: https://markdownguide.org/basic-syntax#code
+  value: true
+
+- name: Horizontal Rules
+  link: https://markdownguide.org/basic-syntax/#horizontal-rules
+  value: true
+
+- name: Links
+  link: https://markdownguide.org/basic-syntax/#links
+  value: true
+
+- name: Images
+  link: https://markdownguide.org/basic-syntax/#images-1
+  value: true
+
+- name: Tables
+  link: https://markdownguide.org/extended-syntax/#tables
+  value: true
+
+- name: Fenced Code Blocks
+  link: https://markdownguide.org/extended-syntax/#fenced-code-blocks
+  value: true
+
+- name: Syntax Highlighting
+  link: https://markdownguide.org/extended-syntax/#syntax-highlighting
+  value: false
+
+- name: Footnotes
+  link: https://markdownguide.org/extended-syntax/#footnotes
+  value: false
+
+- name: Heading IDs
+  link: https://markdownguide.org/extended-syntax/#heading-ids
+  value: false
+
+- name: Definition Lists
+  link: https://markdownguide.org/extended-syntax/#definition-lists
+  value: false
+
+- name: Strikethrough
+  link: https://markdownguide.org/extended-syntax/#strikethrough
+  value: false
+
+- name: Task Lists
+  link: https://markdownguide.org/extended-syntax/#task-lists
+  value: true
+
+- name: Emoji (copy and paste)
+  link: https://markdownguide.org/extended-syntax/#copying-and-pasting-emoji
+  value: false
+
+- name: Emoji (shortcodes)
+  link: https://markdownguide.org/extended-syntax/#using-emoji-shortcodes
+  value: false
+
+- name: Automatic URL Linking
+  link: https://markdownguide.org/extended-syntax/#automatic-url-linking
+  value: true
+
+- name: Disabling Automatic URL Linking
+  link: https://markdownguide.org/extended-syntax/#disabling-automatic-url-linking
+  value: true
+
+- name: HTML
+  link: https://markdownguide.org/basic-syntax/#html
+  value: false

@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+<div class="px-4">
+
+    <article class="prose xl:prose-xl">
+      <h1 class="text-4xl mt-1 m-0">{{ .Page.Title }}</h1>
+      <h2 class="text-sm">{{ .Params.subtitle }}</h2>
+
+      <div class="mt-12">
+        {{ .Page.Content }}
+      </div>
+    </article>
+
+
+<table class="table-auto">
+    <thead>
+      <tr>
+        <th class="w-1/2 px-4 py-2 align-text-top">Element</th>
+        <th class="w-1/4 px-4 py-2 align-text-top">Support</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $i, $m := .Site.Data.markdown }}
+      <tr>
+        <td class="border px-4 py-2">
+            <a class="hover:text-green-500" href="{{$m.link}}">
+            {{ $m.name }}
+            </a>
+        </td>
+        <td class="border px-4 py-2">
+          {{ if $m.value }}
+          <span class="text-green-500">{{ partial "check" . }}</span>
+          {{ else }}
+          <span class="text-red-800">{{ partial "cross" . }}</span>
+          {{ end }}
+        </td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+
+  </div>
+
+
+{{ end }}
