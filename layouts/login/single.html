@@ -13,7 +13,7 @@
         <span class="inline-flex px-2" id="form-error-text"></span>
       </div>
     </div>
-    <form class="mt-8" onsubmit="login(); return false">
+    <form class="mt-8" id="login-form">
       <input type="hidden" name="remember" value="true">
       <div class="rounded-md shadow-sm">
         <div>
@@ -61,7 +61,7 @@
       </div>
 
 
-      <!-- 
+      <!--
         <div class="mt-2">
         <button
           class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:border-green-700 focus:shadow-outline-green active:bg-green-700 transition duration-150 ease-in-out"
@@ -112,69 +112,7 @@
   </div>
 </div>
 
-<script>
-  async function login() {
-    var email = document.getElementById("email").value;
-    if (email == "") {
-      // hack because login gets called when clicking on any other button as well
-      return;
-    }
-    var password = document.getElementById("password").value;
-    var remember_me = document.getElementById("remember_me").checked;
-
-    // FIXME: What about the remember_me?
-
-    const sup = supabase.createClient('https://kokulrmhlfxdwuvcmblj.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzMTM3NDY4OSwiZXhwIjoxOTQ2OTUwNjg5fQ.LvaFM84Q00RKkRTyIDjzZAnkzba30bnRhQZQldj1AfU');
-    const { user, session, error } = await sup.auth.signIn({  email: email,  password: password,});
-    if (error != null) {
-      showError(error.message);
-    } else {
-      console.log('Success! User: ' + JSON.stringify({ user }));
-      console.log('Success! Session: ' + JSON.stringify({ session }));
-      window.location.href = '/account';
-    }
-  }
-
-  function showError(message) {
-    $("#form-error").removeClass('hidden');
-    $("#form-error-text").text(message);
-  }
-
-  function loginGitLab() {
-    var auth = new GoTrue({
-      APIUrl: API_URL,
-      audience: '',
-      setCookie: true,
-    });
-
-    var resp = auth.loginExternalUrl("gitlab");
-    console.log("RESP", resp);
-    window.location.href = resp;
-  }
-
-  function loginGoogle() {
-    var auth = new GoTrue({
-      APIUrl: API_URL,
-      audience: '',
-      setCookie: true,
-    });
-
-    var resp = auth.loginExternalUrl("google");
-    console.log("RESP", resp);
-    window.location.href = resp;
-  }
-
-  function loginGithub() {
-    var auth = new GoTrue({
-      APIUrl: API_URL,
-      audience: '',
-      setCookie: true,
-    });
-
-    var resp = auth.loginExternalUrl("github");
-    console.log("RESP", resp);
-    window.location.href = resp;
-  }
-</script>
+{{ $js := resources.Get "js/login.ts" | js.Build | fingerprint }}
+<script src="{{ $js.Permalink }}"></script>
 
 {{ end }}
