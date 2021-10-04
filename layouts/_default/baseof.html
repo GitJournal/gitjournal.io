@@ -35,9 +35,7 @@
   <script>window.plausible = function (ev) { console.log("Plausible Event:", ev); }</script>
   {{ end }}
 
-  <script async defer src="/js/jquery-3.6.0.min.js"></script>
   <script async defer src="/js/chart.min.js"></script>
-  <script async defer src='/js/sentry.min.js'> </script>
 
   <script async defer src="/js/gotrue.js"></script>
   <script async defer src='/js/supabase.js'></script>
@@ -62,10 +60,10 @@
 
   {{ end }}
 
-  {{/*  Js information */}}
+  {{/* Js information */}}
   {{ $alpineDev := resources.Get "js/alpine.js" }}
   {{ $alpineProd := resources.Get "js/alpine.min.js" }}
-  {{ $js := resources.Get "js/main.js" }}
+  {{ $js := resources.Get "js/main.js" | js.Build }}
   {{ $jsDevAll := slice $alpineDev $js | resources.Concat "js/main-dev.js" | minify }}
   {{ $jsProdAll := slice $alpineProd $js | resources.Concat "js/main.js" | minify }}
   {{ if .Site.IsServer }}
