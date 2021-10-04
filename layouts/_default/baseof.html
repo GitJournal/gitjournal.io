@@ -15,7 +15,7 @@
   <meta name="keywords" content='{{ delimit .Keywords " " }}' />
   {{ end }}
 
-  {{/*  // Assets information  */}}
+  {{/* // Assets information */}}
   {{ $cssOpts := (dict "targetPath" "styles/main.css" "enableSourceMap" true ) }}
   {{ $postcssOpts := (dict "config" "postcss.config.js" ) }}
   {{ $styles := resources.Get "styles/main.scss" | toCSS $cssOpts | postCSS $postcssOpts }}
@@ -63,8 +63,8 @@
   {{/* Js information */}}
   {{ $alpineDev := resources.Get "js/alpine.js" }}
   {{ $alpineProd := resources.Get "js/alpine.min.js" }}
-  {{ $js := resources.Get "js/main.js" | js.Build }}
-  {{ $jsDevAll := slice $alpineDev $js | resources.Concat "js/main-dev.js" | minify }}
+  {{ $js := resources.Get "js/main.ts" | js.Build }}
+  {{ $jsDevAll := slice $alpineDev $js | resources.Concat "js/main-dev.js" }}
   {{ $jsProdAll := slice $alpineProd $js | resources.Concat "js/main.js" | minify }}
   {{ if .Site.IsServer }}
   <script src="{{ $jsDevAll.Permalink }}"></script>

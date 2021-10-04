@@ -1,8 +1,7 @@
 import $ from "jquery";
-import * as Sentry from '@sentry/browser';
+import * as Sentry from "@sentry/browser";
 
 window.onload = function () {
-
   const images = [
     "https://gitjournal.io/screenshots/android/2020-09-28/en-GB/images/phoneScreenshots/Nexus 6P-11.png",
     "https://gitjournal.io/screenshots/android/2020-09-28/en-GB/images/phoneScreenshots/Nexus 6P-18.png",
@@ -21,13 +20,17 @@ window.onload = function () {
   ];
   carosel(images2, "caro2", "caro-prev2", "caro-next2");
 
-  // FIXME: Do not do this on the development run!
   Sentry.init({
     dsn: "https://e7de932a291e411e9958d1f85841d237@o366485.ingest.sentry.io/5958863",
   });
 };
 
-function carosel(images, mainId, prevId, nextId) {
+function carosel(
+  images: string[],
+  mainId: string,
+  prevId: string,
+  nextId: string
+) {
   const caroE = document.getElementById(mainId);
   if (caroE == null) {
     return;
@@ -81,8 +84,8 @@ function carosel(images, mainId, prevId, nextId) {
   preload(images);
 }
 
-function preload(arrayOfImages) {
-  $(arrayOfImages).each(function () {
-    $("<img />").attr("src", this).appendTo("body").hide();
+function preload(arrayOfImages: string[]) {
+  arrayOfImages.forEach((src) => {
+    $("<img />").attr("src", src).appendTo("body").hide();
   });
 }
