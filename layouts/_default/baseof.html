@@ -29,7 +29,7 @@
   <link rel="manifest" href="{{ " images/favicon/site.webmanifest" | relURL }}">
 
   {{ if not .Site.IsServer }}
-  <script async defer data-domain="gitjournal.io" src="https://plausible.gitjournal.io/js/index.js"></script>
+  <script async defer data-domain="gitjournal.io" src="https://plausible.gitjournal.io/js/plausible.js"></script>
   <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
   {{ else }}
   <script>window.plausible = function (ev) { console.log("Plausible Event:", ev); }</script>
