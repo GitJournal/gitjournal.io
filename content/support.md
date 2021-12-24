@@ -50,10 +50,10 @@ then
     git add --all
     git commit -m "$gstatus"
 
-	git pull --rebase
+    git pull --rebase
     git push
 else
-	git pull
+    git pull
 fi
 ```
 
