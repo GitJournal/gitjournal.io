@@ -18,6 +18,9 @@
   },
   "devDependencies": {
     "@types/jquery": "^3.5.6",
+    "prettier": "^2.5.1",
+    "prettier-plugin-go-template": "^0.0.11",
+    "prettier-plugin-tailwindcss": "^0.1.8",
     "tailwind-heropatterns": "0.0.8",
     "tailwindcss-debug-screens": "^1.1.0"
   }
