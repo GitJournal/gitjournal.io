@@ -1,5 +1,6 @@
 ---
 title: What is Git?
+weight: 1
 ---
 
 Git can be thought of as a virtual pen drive. Just like with a normal pendrive you can store files in it. However, it comes with a few awesome capabilities. Since it is a virtual pen drive, it can be easily duplicated.

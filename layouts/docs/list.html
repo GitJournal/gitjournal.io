@@ -6,7 +6,7 @@
   <div class="mt-12">
     <h2 class="text-2xl mt-1 m-0">General</h1>
 
-    {{ range .RegularPages }}
+    {{ range .RegularPages.ByWeight }}
     <ul class="mx-4 mt-4">
       <li>
           <a href="{{.Permalink}}">{{.Title}}</a>
