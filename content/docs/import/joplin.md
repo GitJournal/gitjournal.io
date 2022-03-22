@@ -1,6 +1,8 @@
 ---
 title: Joplin Import
 keywords: ['joplin', 'gitjournal', 'git', 'android', 'ios']
+related:
+  - /docs/git-auto-sync.md
 ---
 
 ![Joplin](https://raw.githubusercontent.com/laurent22/joplin/master/Assets/LinuxIcons/256x256.png)

@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+<article class="prose xl:prose-xl px-4">
+  <h1 class="text-4xl mt-1 m-0">{{ .Page.Title }}</h1>
+
+  <div class="mt-12">
+    <h2 class="text-2xl mt-1 m-0">General</h1>
+
+    <ul class="mx-4 mt-4">
+      <li>
+          <a href="/docs/what-is-git">What is Git</a>
+      </li>
+      <li>
+      <a href="/docs/links">Linking between Notes</a>
+
+    </li>
+
+    </ul>
+  </div>
+
+
+  {{ range .Pages }}
+  {{ if .Pages }}
+  <div class="mt-12">
+    <h2 class="text-2xl mt-1 m-0">{{ .Title }}</h1>
+
+    <ul class="mx-4 mt-4">
+      {{ range .Pages }}
+      <li>
+          <a href="{{.Permalink}}">{{.Title}}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+  {{ end }}
+
+</article>
+
+{{ end }}

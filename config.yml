@@ -12,7 +12,7 @@ params:
     - title: Pricing
       Permalink: /pricing
     - title: Docs
-      Permalink: /support
+      Permalink: /docs
     - title: Changelog
       Permalink: /changelog
     - title: Blog
@@ -28,7 +28,7 @@ params:
         - title: Contribute
           Permalink: /contribute
         - title: FAQ
-          Permalink: /support
+          Permalink: /docs
         - title: Privacy
           Permalink: /privacy
         - title: Roadmap
