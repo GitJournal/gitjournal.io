@@ -36,7 +36,7 @@ However, I need to slow down.
 
 ![Slow Down](/images/blog/2020/12/ralph-ravi-kayden-aECGWofxVkw-unsplash.jpg)
 
-Over the last month, [a chronic condition](https://en.wikipedia.org/wiki/Multiple_sclerosis) I've had for a long time has flared up, and has sadly affected my hands. I now need to take frequent breaks between sessions of using the keyboard. I'm hoping this will heal, but in the meantime, I need to adapt.
+Over the last month, a chronic condition I've had for a long time has flared up, and has sadly affected my hands. I now need to take frequent breaks between sessions of using the keyboard. I'm hoping this will heal, but in the meantime, I need to adapt.
 
 I'm going to slow down and prioritize my health. This effectively means for December (and maybe even January), I'm going to focus less on Marketing and Customer Development, and focus on the parts that give me the most joy - building GitJournal as a product.
 
